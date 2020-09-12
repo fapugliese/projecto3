@@ -1,9 +1,11 @@
+/*discover text*/
 #discover{
     text-align: center;
     font-weight: 100;
     color: grey;
 }
 
+/*button*/
 .button{
     border: none;
     min-width: 180px;
@@ -20,11 +22,13 @@
 
     }
 
+    /*button container*/
     .wrapper{
         display: flex;
         justify-content: center;
      }
 
+    /*order steps*/
     .step{
         border: none;
         min-width: 180px;
@@ -39,16 +43,21 @@
         margin: 0.4em;
     }
 
+    /*number margin*/
     .inside{
         margin: 1em;
         
     }
+
+    /*number font*/
     .inside--number{
         position: absolute;
         left: -1em;
         color: #9356DC;
         width: 1.8em;
     }
+
+    /*icon*/
     #insidei{
         margin: 1em; 
         margin-left: 2em;

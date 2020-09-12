@@ -1,42 +1,51 @@
+/*container*/
 .container {
   display: grid;
   grid-template: 1fr/1fr;
 }
 
+/*image*/
 .img {
   width: 100%;
   object-fit: contain;
 }
 
+/*paris container*/
 #paris {
   background-color: #c5c5c5;
   text-align: center;
 }
 
+/*book menu*/
 #book {
   text-align: center;
 }
 
+/*logos*/
 #logo {
   font-family: "Shrikhand", cursive;
   font-style: italic;
   text-align: center;
 }
 
+/*texts*/
 .text {
   font-family: "Roboto", sans-serif;
 }
 
+/*titles*/
 .title {
   font-family: "Shrikhand", cursive;
 }
 
+/*discover text*/
 #discover {
   text-align: center;
   font-weight: 100;
   color: grey;
 }
 
+/*button*/
 .button {
   border: none;
   min-width: 180px;
@@ -52,11 +61,13 @@
   font-weight: 700;
 }
 
+/*button container*/
 .wrapper {
   display: flex;
   justify-content: center;
 }
 
+/*order steps*/
 .step {
   border: none;
   min-width: 180px;
@@ -71,10 +82,12 @@
   margin: 0.4em;
 }
 
+/*number margin*/
 .inside {
   margin: 1em;
 }
 
+/*number font*/
 .inside--number {
   position: absolute;
   left: -1em;
@@ -82,26 +95,31 @@
   width: 1.8em;
 }
 
+/*icon*/
 #insidei {
   margin: 1em;
   margin-left: 2em;
 }
 
+/*restaurant container*/
 .restaurant {
   border-radius: 100px;
   margin: 3em;
   display: grid;
 }
 
+/*image*/
 .img {
   display: inline-block;
 }
 
+/*image border*/
 .img--border {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
 }
 
+/*restaurant name*/
 #rname {
   background-color: #dadad8;
   padding: 1em;
@@ -109,10 +127,12 @@
   border-bottom-right-radius: 50px;
 }
 
+/*title align*/
 .title {
   text-align: left;
 }
 
+/*heart*/
 .heart-shape {
   position: relative;
   width: 2em;
@@ -152,19 +172,23 @@
   right: 0px;
 }
 
+/*link restaurant*/
 .an {
   display: grid;
 }
 
+/*title margin*/
 .title--margin {
   margin-left: 2.5em;
 }
 
+/*footer container*/
 .footer {
   background-color: #363636;
   color: white;
 }
 
+/*footer logo*/
 #logof {
   font-family: "Shrikhand", cursive;
   font-style: italic;
@@ -172,6 +196,7 @@
   font-size: 1.2em;
 }
 
+/*text footer*/
 .text--f {
   padding: 3em;
   padding-top: 0em;
@@ -180,15 +205,18 @@
   font-size: 0.8em;
 }
 
+/*become a partner*/
 .ftext {
   padding: 3em;
 }
 
+/* logo container*/
 #head {
   display: grid;
   grid-template: 5em/5% 95%;
 }
 
+/*Back arrow*/
 #back {
   position: relative;
   top: 40%;
@@ -196,11 +224,13 @@
   font-size: 2em;
 }
 
+/*title restaurant*/
 .title--r {
   text-align: left;
   margin-left: 2em;
 }
 
+/* dish container*/
 .steps {
   border: none;
   min-width: 180px;
@@ -217,8 +247,7 @@
   animation-fill-mode: backwards;
 }
 .steps:active > .checkl {
-  animation: checkedl 900ms;
-  animation-fill-mode: forwards;
+  animation: checkedl 900ms forwards;
 }
 .steps--1 {
   animation-delay: 150ms;
@@ -251,11 +280,13 @@
   animation-delay: 1500ms;
 }
 
+/*check effect*/
 @keyframes checkedl {
   to {
     transform: scalex(1);
   }
 }
+/*dish effect*/
 @keyframes load {
   0% {
     transform: scaleY(0);
@@ -272,12 +303,14 @@
     transform: scaleY(1);
   }
 }
+/*food name*/
 .fname {
   font-size: 3.2em;
   margin-left: 0.7em;
   margin-top: 0.5em;
 }
 
+/*food description*/
 .fdescription {
   font-size: 2.2em;
   margin-left: 1em;
@@ -285,6 +318,7 @@
   margin-bottom: 0.3em;
 }
 
+/*price*/
 .price {
   display: flex;
   position: relative;
@@ -292,9 +326,9 @@
   margin-bottom: 1em;
   right: -20%;
   font-size: 2.8em;
-  background-color: yellow;
 }
 
+/*check*/
 .checkl {
   display: flex;
   position: relative;
@@ -307,10 +341,12 @@
   transform-origin: right;
 }
 
+/*order container*/
 .order {
   text-align: center;
 }
 
+/*menu container*/
 .cover {
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
@@ -319,11 +355,13 @@
   background-color: white;
 }
 
+/*title & heart container*/
 .th {
   display: grid;
   grid-template: 1fr/90% 10%;
 }
 
+/*heart*/
 .fa-heart {
   display: flex;
   position: relative;
@@ -331,6 +369,7 @@
   font-size: 2.4em;
 }
 
+/*food step*/
 .dish {
   margin-left: 3em;
 }

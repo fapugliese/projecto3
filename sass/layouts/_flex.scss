@@ -1,8 +1,11 @@
+/*container*/
 .container{
     display: grid;   
     grid-template: 1fr / 1fr;
     
 }
+
+/*image*/
 .img{
     width: 100%;
     object-fit: contain;

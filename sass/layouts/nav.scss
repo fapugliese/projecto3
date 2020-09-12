@@ -1,18 +1,22 @@
+/*restaurant container*/
 .restaurant{
     border-radius: 100px;
     margin: 3em;
     display: grid;
     }
 
+ /*image*/   
 .img{  
     display: inline-block;
 }
 
+/*image border*/
 .img--border{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
 
+/*restaurant name*/
 #rname{
     background-color: rgb(218, 218, 216);
     padding: 1em;
@@ -20,10 +24,12 @@
     border-bottom-right-radius: 50px;
 }
 
+/*title align*/
 .title{
     text-align: left; 
 }
 
+/*heart*/
 .heart-shape{
     position: relative;
     width: 2em;
@@ -61,10 +67,12 @@
     right: 0px;
 }
 
+/*link restaurant*/
 .an{
     display: grid;
 }
 
+/*title margin*/
 .title--margin{
     margin-left: 2.5em;
 }

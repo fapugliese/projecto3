@@ -2,12 +2,13 @@ $max-num-dish: 10;
 $anim-dur: 150ms * $max-num-dish;
 $anim-delay: $anim-dur / $max-num-dish;
 
-
+/* logo container*/
 #head{
     display: grid;
     grid-template: 5em/ 5% 95%;
 }
 
+/*Back arrow*/
 #back{
     position: relative;
     top: 40%;
@@ -15,11 +16,13 @@ $anim-delay: $anim-dur / $max-num-dish;
     font-size: 2em;
 }
 
+/*title restaurant*/
 .title--r{
     text-align: left;
     margin-left: 2em;
 }
 
+/* dish container*/
 .steps{
     border: none;
     min-width: 180px;
@@ -36,8 +39,9 @@ $anim-delay: $anim-dur / $max-num-dish;
     animation-fill-mode: backwards;
     &:active {
         & > .checkl {
-            animation: checkedl 900ms;
-            animation-fill-mode: forwards;
+            animation: checkedl 900ms forwards;
+            
+            
             }
     } 
     @for $i from 1 through $max-num-dish {
@@ -48,12 +52,14 @@ $anim-delay: $anim-dur / $max-num-dish;
     }
 }
 
+/*check effect*/
 @keyframes checkedl{
      to{
         transform: scalex(1);
     }
 }
 
+/*dish effect*/
 @keyframes load {
     0% {
         transform: scaleY(0);
@@ -72,6 +78,7 @@ $anim-delay: $anim-dur / $max-num-dish;
     }
 }
 
+/*food name*/
 .fname{
     font-size: 3.2em;
     margin-left: 0.7em;
@@ -79,6 +86,7 @@ $anim-delay: $anim-dur / $max-num-dish;
 
 }
 
+/*food description*/
 .fdescription{
     font-size: 2.2em;
     margin-left: 1em;
@@ -87,6 +95,7 @@ $anim-delay: $anim-dur / $max-num-dish;
 
 }
 
+/*price*/
 .price{
     display: flex;
     position: relative;
@@ -94,9 +103,9 @@ $anim-delay: $anim-dur / $max-num-dish;
     margin-bottom: 1em;
     right: -20%;
     font-size: 2.8em;
-    background-color: yellow;
     }
 
+    /*check*/
     .checkl{
         display: flex;
         position: relative;
@@ -108,11 +117,12 @@ $anim-delay: $anim-dur / $max-num-dish;
         transform: scaleX(0);
         transform-origin: right;
     }
-
+/*order container*/
     .order{
         text-align: center;;
     }
 
+    /*menu container*/
     .cover{
         border-top-right-radius: 50px;
         border-top-left-radius: 50px;
@@ -121,11 +131,13 @@ $anim-delay: $anim-dur / $max-num-dish;
         background-color: white;
     }
 
+    /*title & heart container*/
     .th{
         display: grid;
         grid-template: 1fr / 90% 10%;
     }
 
+    /*heart*/
     .fa-heart{
         display: flex;
         position: relative;
@@ -133,6 +145,7 @@ $anim-delay: $anim-dur / $max-num-dish;
         font-size: 2.4em;
     }
 
+    /*food step*/
     .dish{
         margin-left: 3em;
     }
