@@ -1,0 +1,70 @@
+.restaurant{
+    border-radius: 100px;
+    margin: 3em;
+    display: grid;
+    }
+
+.img{  
+    display: inline-block;
+}
+
+.img--border{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+#rname{
+    background-color: rgb(218, 218, 216);
+    padding: 1em;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.title{
+    text-align: left; 
+}
+
+.heart-shape{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: rgb(252, 250, 248);
+    right: -48em;
+    top: -4em;
+    border-style: solid;
+    border: black;
+}
+.heart-shape:before,
+.heart-shape:after{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.heart-shape:before{
+    bottom: 0px;
+    left: -1em;
+    
+}
+.heart-shape:after{
+    top: -1em;
+    right: 0px;
+}
+
+.an{
+    display: grid;
+}
+
+.title--margin{
+    margin-left: 2.5em;
+}
