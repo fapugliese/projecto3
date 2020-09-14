@@ -44,6 +44,9 @@ $anim-delay: $anim-dur / $max-num-dish;
             
             }
     } 
+   
+
+
     @for $i from 1 through $max-num-dish {
         &--#{$i} {
             animation-delay: $anim-delay * $i;

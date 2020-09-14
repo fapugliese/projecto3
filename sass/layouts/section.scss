@@ -10,7 +10,7 @@
     border: none;
     min-width: 180px;
     height: 50px;
-    background: #FF79DA;
+    background-color: #FF79DA;
     color: rgb(250, 248, 248);
     display: inline-flex;
     border-radius: 100px;
@@ -19,13 +19,16 @@
     font-size: 3em;
     padding: 1em;
     font-weight: 700;
-
+    &:hover{
+        background-color: lighten( #FF79DA, 3%);
+    }
     }
 
     /*button container*/
     .wrapper{
         display: flex;
         justify-content: center;
+       
      }
 
     /*order steps*/

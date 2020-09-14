@@ -8,3 +8,45 @@
 #book{
     text-align: center;
 }
+
+
+.preloader {
+  width: 90px;
+  height: 90px;
+  border: 10px solid #eee;
+  border-top: 10px solid blue;
+  border-radius: 50%;
+  animation: girar 1s 0s 3 linear both;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+
+  }
+  99%{
+    opacity: 0.99;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+#containerr{
+    animation: show 0.56s 3s both;
+    opacity: 0;
+   
+}
+
+@keyframes show {
+    from {
+      opacity: 0;
+    }
+    to {
+     opacity: 1;
+    }
+}
