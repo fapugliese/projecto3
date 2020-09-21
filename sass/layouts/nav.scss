@@ -1,3 +1,5 @@
+$heart: #9356DC ;
+
 /*restaurant container*/
 .restaurant{
     border-radius: 100px;
@@ -19,7 +21,8 @@
 /*restaurant name*/
 #rname{
     background-color: rgb(218, 218, 216);
-    padding: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -29,43 +32,6 @@
     text-align: left; 
 }
 
-/*heart*/
-.heart-shape{
-    position: relative;
-    width: 2em;
-    height: 2em;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: rgb(252, 250, 248);
-    right: -48em;
-    top: -4em;
-    border-style: solid;
-    border: black;
-}
-.heart-shape:before,
-.heart-shape:after{
-    position: absolute;
-    width: 2em;
-    height: 2em;
-    content: '';
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-}
-.heart-shape:before{
-    bottom: 0px;
-    left: -1em;
-    
-}
-.heart-shape:after{
-    top: -1em;
-    right: 0px;
-}
 
 /*link restaurant*/
 .an{
@@ -75,4 +41,79 @@
 /*title margin*/
 .title--margin{
     margin-left: 2.5em;
+}
+
+.heartu1{
+    position: relative;
+    right: -9em;
+    top: -1.7em;
+    font-size: 5em;
+    margin: 0.01em;
+    color: white;
+    transform-origin: 50% 0%;
+    
+}
+
+#yes2{
+    transform: scaleX(4.5) scaleY(5);
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    left: 43.5em;
+    top: -12em;
+    &:checked ~* .heartu2 {
+    animation: fillheart 2s infinite;
+}
+}
+
+
+.heartu2{
+    position: relative;
+    right: -7.93em;
+    top: -1.7em;
+    font-size: 5em;
+    margin: 0.01em;
+    color: $heart;
+    opacity: 0;
+    &:hover{
+    
+        animation: fillheart 2s infinite;
+    }
+    
+}
+
+
+@keyframes fillheart{
+    0%{
+        clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
+        opacity: 1;
+    }
+    100%{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        opacity: 1;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .heartu1{
+        position: relative;
+        right: -16em;
+        top: -1.2em;
+        font-size: 5em;
+        margin: 0.01em;
+        color: white;
+        transform-origin: 50% 0%;
+        
+    }
+
+    .heartu2{
+        position: relative;
+        right: -14.95em;
+        top: -1.2em;
+        font-size: 5em;
+        margin: 0.01em;
+        color: $heart;
+        opacity: 0;        
+    }
+        
 }

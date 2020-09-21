@@ -10,7 +10,7 @@
     border: none;
     min-width: 180px;
     height: 50px;
-    background-color: #FF79DA;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
     color: rgb(250, 248, 248);
     display: inline-flex;
     border-radius: 100px;
@@ -19,6 +19,7 @@
     font-size: 3em;
     padding: 1em;
     font-weight: 700;
+    box-shadow: 5px 10px 5px rgb(204, 203, 203);
     &:hover{
         background-color: lighten( #FF79DA, 3%);
     }

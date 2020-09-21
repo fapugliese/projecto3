@@ -1,6 +1,7 @@
 $max-num-dish: 10;
 $anim-dur: 150ms * $max-num-dish;
 $anim-delay: $anim-dur / $max-num-dish;
+$covercolor: darken(white, 4%);
 
 /* logo container*/
 #head{
@@ -20,16 +21,17 @@ $anim-delay: $anim-dur / $max-num-dish;
 .title--r{
     text-align: left;
     margin-left: 2em;
+    margin-top: 2em;
 }
 
 /* dish container*/
 .steps{
     border: none;
     min-width: 180px;
-    background: #b6b4b6;
+    background: white;
     border-radius: 50px;
     display: grid;
-    grid-template: 1fr / 75% 10% 15%;
+    grid-template: 1fr / 80% 10% 10%;
     width: 95%;
     overflow: hidden;
     margin-top: 2em;
@@ -37,27 +39,43 @@ $anim-delay: $anim-dur / $max-num-dish;
     margin-left: 1em;
     animation: load $anim-dur;
     animation-fill-mode: backwards;
-    &:active {
-        & > .checkl {
-            animation: checkedl 900ms forwards;
-            
-            
-            }
-    } 
-   
-
-
+    box-shadow: 5px 10px 5px rgb(185, 184, 184);
+    
     @for $i from 1 through $max-num-dish {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
         }
-     
     }
 }
 
-/*check effect*/
+
+#yes{
+    transform: scaleX(80) scaleY(13);
+    cursor: pointer;
+    position: relative;
+    opacity: 0;
+    left: 74em;
+    top: 10em;
+&:checked ~ * .checkl {
+    transform: scaleX(1);
+}
+}
+
+#yes:checked ~ * .steps{
+    animation: gridd 1s forwards;
+}
+
+@keyframes gridd{
+    0%{
+        grid-template: 1fr / 80% 10% 10%;
+    }
+    100%{
+        grid-template: 1fr / 70% 10% 20%;
+    }
+}
+/*check effect*/ 
 @keyframes checkedl{
-     to{
+    to{
         transform: scalex(1);
     }
 }
@@ -67,7 +85,6 @@ $anim-delay: $anim-dur / $max-num-dish;
     0% {
         transform: scaleY(0);
         opacity: 0;
-       
     }
     1%{
         transform: translate(0, 3em);
@@ -91,11 +108,13 @@ $anim-delay: $anim-dur / $max-num-dish;
 
 /*food description*/
 .fdescription{
-    font-size: 2.2em;
+    font-size: 2.3em;
     margin-left: 1em;
     margin-top: 0.1em;
     margin-bottom: 0.3em;
-
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /*price*/
@@ -106,7 +125,7 @@ $anim-delay: $anim-dur / $max-num-dish;
     margin-bottom: 1em;
     right: -20%;
     font-size: 2.8em;
-    }
+}
 
     /*check*/
     .checkl{
@@ -119,6 +138,7 @@ $anim-delay: $anim-dur / $max-num-dish;
         border-bottom-right-radius: 50px;
         transform: scaleX(0);
         transform-origin: right;
+        transition: transform 1s;
     }
 /*order container*/
     .order{
@@ -131,7 +151,9 @@ $anim-delay: $anim-dur / $max-num-dish;
         border-top-left-radius: 50px;
         position: relative;
         top: -7em;
-        background-color: white;
+        background-color: $covercolor;
+        width: 100%;
+        margin: 0%;
     }
 
     /*title & heart container*/
@@ -141,11 +163,13 @@ $anim-delay: $anim-dur / $max-num-dish;
     }
 
     /*heart*/
-    .fa-heart{
+    .heartu3{
         display: flex;
         position: relative;
         align-self: flex-end;
-        font-size: 2.4em;
+        font-size: 3.4em;
+        margin-top: 2em;
+        margin-right: 6em;
     }
 
     /*food step*/
@@ -153,4 +177,15 @@ $anim-delay: $anim-dur / $max-num-dish;
         margin-left: 3em;
     }
 
-  
+    .zero{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    }
+
+    .fa-check-circle{
+        font-size: 4em;
+        color: white;
+    }
+
+    
