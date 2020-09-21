@@ -16,7 +16,7 @@
   border: 10px solid #eee;
   border-top: 10px solid blue;
   border-radius: 50%;
-  animation: girar 0.1s 0s 1 linear both;
+  animation: girar 3s 0s 1 linear both;
   opacity: 1;
   position: absolute;
   top: 50%;
@@ -39,7 +39,7 @@
 }
 
 #containerr{
-    animation: show 0.56s 0.1s both;
+    animation: show 0.1s 3s both;
     opacity: 0;
    
 }
