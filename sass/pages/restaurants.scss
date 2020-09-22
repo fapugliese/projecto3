@@ -7,6 +7,7 @@ $covercolor: darken(white, 4%);
 #head{
     display: grid;
     grid-template: 5em/ 5% 95%;
+    border: none;
 }
 
 /*Back arrow*/
@@ -15,6 +16,7 @@ $covercolor: darken(white, 4%);
     top: 40%;
     right: -50%;
     font-size: 2em;
+    border: none;
 }
 
 /*title restaurant*/
@@ -49,19 +51,19 @@ $covercolor: darken(white, 4%);
 }
 
 
-#yes{
-    transform: scaleX(80) scaleY(13);
+.yes{
+    transform: scaleX(120) scaleY(13);
     cursor: pointer;
     position: relative;
     opacity: 0;
-    left: 74em;
+    left: 54em;
     top: 10em;
 &:checked ~ * .checkl {
     transform: scaleX(1);
 }
 }
 
-#yes:checked ~ * .steps{
+.yes:checked ~ * .steps{
     animation: gridd 1s forwards;
 }
 
@@ -142,7 +144,7 @@ $covercolor: darken(white, 4%);
     }
 /*order container*/
     .order{
-        text-align: center;;
+        text-align: center;
     }
 
     /*menu container*/
@@ -154,12 +156,14 @@ $covercolor: darken(white, 4%);
         background-color: $covercolor;
         width: 100%;
         margin: 0%;
+        border: none;
     }
 
     /*title & heart container*/
     .th{
         display: grid;
         grid-template: 1fr / 90% 10%;
+        border: none;
     }
 
     /*heart*/
@@ -178,9 +182,8 @@ $covercolor: darken(white, 4%);
     }
 
     .zero{
-    margin: 0px;
-    padding: 0px;
     border: none;
+    padding: 0%;
     }
 
     .fa-check-circle{

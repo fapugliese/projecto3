@@ -43,6 +43,7 @@ $heart: #9356DC ;
     margin-left: 2.5em;
 }
 
+/*heart back*/
 .heartu1{
     position: relative;
     right: -9em;
@@ -66,7 +67,7 @@ $heart: #9356DC ;
 }
 }
 
-
+/*heart front*/
 .heartu2{
     position: relative;
     right: -7.93em;
@@ -76,7 +77,6 @@ $heart: #9356DC ;
     color: $heart;
     opacity: 0;
     &:hover{
-    
         animation: fillheart 2s infinite;
     }
     
@@ -94,7 +94,7 @@ $heart: #9356DC ;
     }
 }
 
-@media all and (min-width: 800px) {
+@media only screen and (min-width: 800px) {
     .heartu1{
         position: relative;
         right: -16em;
@@ -114,6 +114,11 @@ $heart: #9356DC ;
         margin: 0.01em;
         color: $heart;
         opacity: 0;        
+    }
+
+    .yes{
+        left: 24em;
+        top: 10em;
     }
         
 }
