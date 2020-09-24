@@ -4,6 +4,9 @@
     text-align: center;
 }
 
+#logo{
+  font-size: 3em;
+}
 /*book menu*/
 #book{
     text-align: center;
@@ -16,7 +19,7 @@
   border: 10px solid #eee;
   border-top: 10px solid blue;
   border-radius: 50%;
-  animation: girar 1s 0s 3 linear both;
+  animation: girar 0s 0s 3 linear both;
   opacity: 1;
   position: absolute;
   top: 50%;
@@ -39,7 +42,7 @@
 }
 
 #containerr{
-    animation: show 0.1s 3s both;
+    animation: show 0.1s 0s both;
     opacity: 0;
    
 }

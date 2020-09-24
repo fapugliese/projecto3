@@ -8,6 +8,8 @@ $covercolor: darken(white, 4%);
     display: grid;
     grid-template: 5em/ 5% 95%;
     border: none;
+    text-align: center; 
+    height: 6em;
 }
 
 /*Back arrow*/
@@ -15,15 +17,16 @@ $covercolor: darken(white, 4%);
     position: relative;
     top: 40%;
     right: -50%;
-    font-size: 2em;
+    font-size: 3em;
     border: none;
 }
 
 /*title restaurant*/
 .title--r{
     text-align: left;
-    margin-left: 2em;
+    margin-left: 1.5em;
     margin-top: 2em;
+    font-size: 2.5em;
 }
 
 /* dish container*/
@@ -33,24 +36,14 @@ $covercolor: darken(white, 4%);
     background: white;
     border-radius: 50px;
     display: grid;
-    grid-template: 1fr / 80% 10% 10%;
-    width: 95%;
-    overflow: hidden;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: 1em;
-    animation: load $anim-dur;
-    animation-fill-mode: backwards;
-    box-shadow: 5px 10px 5px rgb(185, 184, 184);
-    
-    @for $i from 1 through $max-num-dish {
-        &--#{$i} {
-            animation-delay: $anim-delay * $i;
-        }
-    }
+    grid-template: 1fr / 75% 5% 20%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  
+    margin: 0%; 
 }
 
-
+/*triger*/
 .yes{
     transform: scaleX(120) scaleY(13);
     cursor: pointer;
@@ -63,11 +56,33 @@ $covercolor: darken(white, 4%);
 }
 }
 
-.yes:checked ~ * .steps{
-    animation: gridd 1s forwards;
+/*triger*/
+.yes:checked ~ * .shrink{
+    animation: gridd 1s linear both;
+   
+}
+span{
+    right: -1.7em;
+    position: relative;
+    transition: transform 1s linear;
 }
 
-@keyframes gridd{
+
+.yes:checked ~ * span {
+        transform: translate(-2.5em, 0);
+    }
+
+    @keyframes gridd{
+        0%{
+            width: 100%;
+        }
+        100%{
+            width: 85%;
+        }
+    }
+
+/*grid animation*/
+@keyframes grid{
     0%{
         grid-template: 1fr / 80% 10% 10%;
     }
@@ -125,7 +140,6 @@ $covercolor: darken(white, 4%);
     position: relative;
     align-self: flex-end;
     margin-bottom: 1em;
-    right: -20%;
     font-size: 2.8em;
 }
 
@@ -140,7 +154,7 @@ $covercolor: darken(white, 4%);
         border-bottom-right-radius: 50px;
         transform: scaleX(0);
         transform-origin: right;
-        transition: transform 1s;
+        transition: transform 1s linear;
     }
 /*order container*/
     .order{
@@ -178,14 +192,33 @@ $covercolor: darken(white, 4%);
 
     /*food step*/
     .dish{
-        margin-left: 3em;
+        margin-left: 2em;
+        margin-bottom: 0.3em;
+        font-size: 2em;
     }
 
     .zero{
+    min-width: 180px;
+    background: white;
+    border-radius: 50px;
     border: none;
     padding: 0%;
+    width: 95%;
+    overflow: hidden;
+    animation: load $anim-dur;
+    animation-fill-mode: backwards;
+    box-shadow: 5px 10px 5px rgb(185, 184, 184);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    @for $i from 1 through $max-num-dish {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
     }
 
+    /*check circle*/
     .fa-check-circle{
         font-size: 4em;
         color: white;
