@@ -4,13 +4,12 @@ $heart: #9356DC ;
 .restaurant{
     border-radius: 100px;
     margin: 3em;
-    display: grid;
-    padding: 0%;
     }
 
  /*image*/   
 .img{  
     display: inline-block;
+    margin-bottom: 0%;
 }
 
 /*image border*/
@@ -20,17 +19,28 @@ $heart: #9356DC ;
 }
 
 /*restaurant name*/
-#rname{
+.rname{
     background-color: rgb(218, 218, 216);
     padding-left: 1em;
     padding-top: 1em;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    margin-top: 0%;
+    display: grid;
+    grid-template-columns: 80% 20%;
 }
 
 /*title align*/
 .title{
     text-align: left; 
+    font-size: 2.9em;
+    color: black;
+}
+
+.text--paris, .text--paris:visited{
+    font-size: 2.8em;
+    font-weight: 900;
+    color: black;
 }
 
 
@@ -46,14 +56,9 @@ $heart: #9356DC ;
 
 /*heart back*/
 .heartu1{
-    position: relative;
-    right: -9em;
-    top: -1.7em;
     font-size: 5em;
     margin: 0.01em;
-    color: white;
-    transform-origin: 50% 0%;
-    
+    color: white;   
 }
 
 #yes2{
@@ -62,24 +67,23 @@ $heart: #9356DC ;
     cursor: pointer;
     position: relative;
     opacity: 1;
-    left: 98.5em;
-    top: -3.5em;
+    left: 2.5em;
+    top: 3.2em;
     z-index: 1;
     opacity: 0;
     &:checked ~* .heartu2 {
-    animation: fillheart 1.5s linear forwards;
+    animation: fillheart 1s ease-in-out forwards;
 }
 }
 
 /*heart front*/
 .heartu2{
-    position: relative;
-    right: -7.93em;
-    top: -1.7em;
     font-size: 5em;
     margin: 0.01em;
     color: $heart;
     opacity: 0;
+    position: relative;
+    left: -1.05em;
 }
 
 
@@ -100,9 +104,7 @@ a, a:visited + .title{
 
 @media all and (min-width: 990px) {
     .heartu1{
-        position: relative;
-        right: -16em;
-        top: -1.2em;
+        
         font-size: 5em;
         margin: 0.01em;
         color: white;
@@ -111,8 +113,7 @@ a, a:visited + .title{
 
     .heartu2{
         position: relative;
-        right: -14.95em;
-        top: -1.2em;
+        top: -1.02em;
         font-size: 5em;
         margin: 0.01em;
         color: $heart;
@@ -123,6 +124,23 @@ a, a:visited + .title{
         left: 24em;
         top: 10em;
     }
+
+    .rcontainer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #logo1{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+    #logo2{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+
         
 }
 

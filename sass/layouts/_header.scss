@@ -4,47 +4,87 @@
     text-align: center;
 }
 
+/*main loog*/
 #logo{
-  font-size: 3em;
+  font-size: 4em;
 }
 /*book menu*/
 #book{
     text-align: center;
 }
 
-
-.preloader {
-  width: 90px;
-  height: 90px;
-  border: 10px solid #eee;
-  border-top: 10px solid blue;
-  border-radius: 50%;
-  animation: girar 0s 0s 3 linear both;
-  opacity: 1;
+/*logo border*/
+#logo1{
+  color: transparent;
+  font-family: 'Shrikhand', cursive;
+  font-style: italic;
+  -webkit-text-stroke: 3px black;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 5%;
+  font-size: 10em;
   margin: 0%;
-  
+  border: none;
+  animation: loadd2 3s both;
 }
-@keyframes girar {
-  0% {
-    transform: rotate(0deg);
 
+/*logo1 load*/
+@keyframes loadd2{
+  0%{
   }
   99%{
-    opacity: 0.99;
+    opacity: 1;
+    -webkit-text-stroke: 3px black;
   }
-  100% {
-    transform: rotate(360deg);
+  100%{
+    opacity: 0;
+    -webkit-text-stroke: 3px white;
+  }
+}
+
+/*logo loading*/
+#logo2{
+  color: black;
+  font-family: 'Shrikhand', cursive;
+  font-style: italic;
+  animation: loadd 3s linear both;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 10em;
+  margin: 0%;
+}
+
+/*logo2 loader*/
+@keyframes loadd{
+  0%{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  25%{
+    clip-path: polygon(0 0, 33% 0, 32% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(.9,0,.1,1);
+  }
+  50%{
+    clip-path: polygon(0 0, 52% 0, 52% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(.25,0.25,1);
+  }
+  75%{
+    clip-path: polygon(0 0, 74% 0, 73% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(.9,0,.1,1);
+  }
+  99%{
+    opacity: 1;
+  }
+  100%{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 0;
   }
 }
 
+
 #containerr{
-    animation: show 0.1s 0s both;
-    opacity: 0;
-   
+    animation: show 0.1s 3.2s both;
+    opacity: 0;   
 }
 
 @keyframes show {

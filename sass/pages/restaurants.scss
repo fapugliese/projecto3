@@ -58,16 +58,23 @@ $covercolor: darken(white, 4%);
 
 /*triger*/
 .yes:checked ~ * .shrink{
-    animation: gridd 1s linear both;
+    animation: gridd 0.5s linear both;
    
 }
 span{
     right: -1.7em;
     position: relative;
-    transition: transform 1s linear;
+    transition: transform 0.5s linear;
 }
 
+.yes:checked ~ * .fa-check-circle{
+    transform: rotate(0deg);
+}
 
+.fa-check-circle{
+    transform: rotate(-360deg);
+    transition: transform 0.5s linear;
+}
 .yes:checked ~ * span {
         transform: translate(-2.5em, 0);
     }
@@ -154,7 +161,7 @@ span{
         border-bottom-right-radius: 50px;
         transform: scaleX(0);
         transform-origin: right;
-        transition: transform 1s linear;
+        transition: transform 0.5s linear;
     }
 /*order container*/
     .order{

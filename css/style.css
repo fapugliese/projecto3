@@ -25,8 +25,9 @@
   text-align: center;
 }
 
+/*main loog*/
 #logo {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 /*book menu*/
@@ -34,34 +35,72 @@
   text-align: center;
 }
 
-.preloader {
-  width: 90px;
-  height: 90px;
-  border: 10px solid #eee;
-  border-top: 10px solid blue;
-  border-radius: 50%;
-  animation: girar 0s 0s 3 linear both;
-  opacity: 1;
+/*logo border*/
+#logo1 {
+  color: transparent;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  -webkit-text-stroke: 3px black;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 5%;
+  font-size: 10em;
+  margin: 0%;
+  border: none;
+  animation: loadd2 3s both;
+}
+
+/*logo1 load*/
+@keyframes loadd2 {
+  99% {
+    opacity: 1;
+    -webkit-text-stroke: 3px black;
+  }
+  100% {
+    opacity: 0;
+    -webkit-text-stroke: 3px white;
+  }
+}
+/*logo loading*/
+#logo2 {
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  animation: loadd 3s linear both;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 10em;
   margin: 0%;
 }
 
-@keyframes girar {
+/*logo2 loader*/
+@keyframes loadd {
   0% {
-    transform: rotate(0deg);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  25% {
+    clip-path: polygon(0 0, 33% 0, 32% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+  }
+  50% {
+    clip-path: polygon(0 0, 52% 0, 52% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+  }
+  75% {
+    clip-path: polygon(0 0, 74% 0, 73% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
   }
   99% {
-    opacity: 0.99;
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     opacity: 0;
   }
 }
 #containerr {
-  animation: show 0.1s 0s both;
+  animation: show 0.1s 3.2s both;
   opacity: 0;
 }
 
@@ -161,13 +200,12 @@
 .restaurant {
   border-radius: 100px;
   margin: 3em;
-  display: grid;
-  padding: 0%;
 }
 
 /*image*/
 .img {
   display: inline-block;
+  margin-bottom: 0%;
 }
 
 /*image border*/
@@ -177,17 +215,28 @@
 }
 
 /*restaurant name*/
-#rname {
+.rname {
   background-color: #dadad8;
   padding-left: 1em;
   padding-top: 1em;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  margin-top: 0%;
+  display: grid;
+  grid-template-columns: 80% 20%;
 }
 
 /*title align*/
 .title {
   text-align: left;
+  font-size: 2.9em;
+  color: black;
+}
+
+.text--paris, .text--paris:visited {
+  font-size: 2.8em;
+  font-weight: 900;
+  color: black;
 }
 
 /*link restaurant*/
@@ -202,13 +251,9 @@
 
 /*heart back*/
 .heartu1 {
-  position: relative;
-  right: -9em;
-  top: -1.7em;
   font-size: 5em;
   margin: 0.01em;
   color: white;
-  transform-origin: 50% 0%;
 }
 
 #yes2 {
@@ -217,24 +262,23 @@
   cursor: pointer;
   position: relative;
   opacity: 1;
-  left: 98.5em;
-  top: -3.5em;
+  left: 2.5em;
+  top: 3.2em;
   z-index: 1;
   opacity: 0;
 }
 #yes2:checked ~ * .heartu2 {
-  animation: fillheart 1.5s linear forwards;
+  animation: fillheart 1s ease-in-out forwards;
 }
 
 /*heart front*/
 .heartu2 {
-  position: relative;
-  right: -7.93em;
-  top: -1.7em;
   font-size: 5em;
   margin: 0.01em;
   color: #9356DC;
   opacity: 0;
+  position: relative;
+  left: -1.05em;
 }
 
 @keyframes fillheart {
@@ -253,9 +297,6 @@ a, a:visited + .title {
 
 @media all and (min-width: 990px) {
   .heartu1 {
-    position: relative;
-    right: -16em;
-    top: -1.2em;
     font-size: 5em;
     margin: 0.01em;
     color: white;
@@ -263,8 +304,7 @@ a, a:visited + .title {
 
   .heartu2 {
     position: relative;
-    right: -14.95em;
-    top: -1.2em;
+    top: -1.02em;
     font-size: 5em;
     margin: 0.01em;
     color: #9356DC;
@@ -274,6 +314,23 @@ a, a:visited + .title {
   .yes {
     left: 24em;
     top: 10em;
+  }
+
+  .rcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  #logo1 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+  }
+
+  #logo2 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
   }
 }
 /*footer container*/
@@ -293,15 +350,15 @@ a, a:visited + .title {
 
 /*text footer*/
 .text--f {
-  padding: 0.5em;
+  padding: 0.3em;
   font-weight: 800;
   font-size: 1.7em;
   margin: 0.5em;
 }
 
-/*become a partner*/
-.ftext {
-  padding: 3em;
+/*contact*/
+.mail {
+  color: white;
 }
 
 /* logo container*/
@@ -359,13 +416,22 @@ a, a:visited + .title {
 
 /*triger*/
 .yes:checked ~ * .shrink {
-  animation: gridd 1s linear both;
+  animation: gridd 0.5s linear both;
 }
 
 span {
   right: -1.7em;
   position: relative;
-  transition: transform 1s linear;
+  transition: transform 0.5s linear;
+}
+
+.yes:checked ~ * .fa-check-circle {
+  transform: rotate(0deg);
+}
+
+.fa-check-circle {
+  transform: rotate(-360deg);
+  transition: transform 0.5s linear;
 }
 
 .yes:checked ~ * span {
@@ -450,7 +516,7 @@ span {
   border-bottom-right-radius: 50px;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 1s linear;
+  transition: transform 0.5s linear;
 }
 
 /*order container*/
