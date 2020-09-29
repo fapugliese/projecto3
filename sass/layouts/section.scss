@@ -9,34 +9,6 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
     color: grey;
 }
 
-/*button*/
-.button{
-    border: none;
-    min-width: 180px;
-    height: 50px;
-    background-image:  $buttoncolor;
-    color: rgb(250, 248, 248);
-    display: inline-flex;
-    border-radius: 100px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 3em;
-    padding: 1em;
-    font-weight: 700;
-    box-shadow: 5px 10px 5px rgb(204, 203, 203);
-    &:hover{
-        filter: brightness(110%);
-    }
-    }
-
-    /*button container*/
-    .wrapper{
-        display: flex;
-        justify-content: center;
-       
-     }
-
     /*order steps*/
     .step{
         border: none;
@@ -58,7 +30,7 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
         margin-left: 1em;
         margin-bottom: 1em;
         
-     }
+    }
 
     /*number font*/
     .inside--number{
@@ -69,32 +41,42 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
         
     }
 
-    /*icon*/
+    /*icon1*/
     #insidei1{
         margin: 1em; 
         margin-left: 2em;
     }
+
+    /*icon1*/
     #insidei2{
         margin: 1em; 
         margin-left: 2em;
     }
+
+    /*icon3*/
     #insidei3{
         margin: 1em; 
         margin-left: 2em;
     }
 
+    /*icon store*/
     .fa-store{
         color: #9356DC;   
     }
 
+    /*step1*/
     #choose{
         position: relative;
         left: 0.8em;
-     }   
+     } 
+     
+     /*step3*/
      #go{
         position: relative;
         left: 0.1em;
      }
+
+     /*step2*/
      #create{
         position: relative;
         left: 0.3em;

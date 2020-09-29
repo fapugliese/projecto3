@@ -1,0 +1,124 @@
+
+/*desktop*/
+@media all and (min-width: 990px) {
+    .heartu1{
+        
+        font-size: 5em;
+        margin: 0.01em;
+        color: white;
+        
+    }
+
+    .heartu2{
+        position: relative;
+        left: 0em;
+        top: -1.02em;
+        font-size: 5em;
+        margin: 0.01em;
+        color: $heart;
+        opacity: 0;        
+    }
+
+    .yes{
+        left: 24em;
+        top: 10em;
+    }
+
+    .rcontainer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #logo1{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+    #logo2{
+        position: absolute;
+        top: 40%;
+        left: 20%;
+    }
+
+.img--1{
+    overflow: hidden;
+    margin-top: -30em;
+    margin-bottom: -10em;
+    width: 100%;
+}
+#head{
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+#paris{
+    font-size: 1.7em;
+}
+#discover{
+    font-size: 1.7em;
+}
+.button--explore{
+    font-size: 1.7em;
+}
+
+.inside{
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    margin-right: 0.2em;
+    
+}
+.step{
+    width:62%;
+    margin-left: 1em;
+}
+#insidei1{
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    position: relative;
+    left: -2.6em;
+ }
+ #insidei2{
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    position: relative;
+    left: -2.6em;
+ }
+ #insidei3{
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    position: relative;
+    left: -2.6em;
+ }
+
+ #choose{
+    position: relative;
+    left: -1.9em;
+ }   
+ #go{
+    position: relative;
+    left: -2.6em;
+ }
+ #create{
+    position: relative;
+    left: -2.4em;
+ }
+ #number{
+    position: relative;
+    left: -2.5em;
+ }
+ #desc{
+    margin-left: 20.5%;
+    
+}
+.title--margin{
+    position: relative;
+    left: 4em;
+}
+#resta{
+    position: relative;
+    left: 6.8em;
+    font-size: 4em;
+}
+}
+

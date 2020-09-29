@@ -1,0 +1,27 @@
+/*button*/
+.button{
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    background-image:  $buttoncolor;
+    color: rgb(250, 248, 248);
+    display: inline-flex;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 3em;
+    padding: 1em;
+    font-weight: 700;
+    box-shadow: 5px 10px 5px rgb(204, 203, 203);
+    &:hover{
+        filter: brightness(110%);
+    }
+}
+
+/*button container*/
+.wrapper{
+    display: flex;
+    justify-content: center;
+   
+ }

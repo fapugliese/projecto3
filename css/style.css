@@ -14,6 +14,7 @@
   object-fit: contain;
 }
 
+/*body*/
 .body {
   width: 100%;
   border: none;
@@ -33,6 +34,7 @@
   top: -0.5em;
 }
 
+/*home logo*/
 #logo {
   font-size: 4em;
 }
@@ -42,70 +44,7 @@
   text-align: center;
 }
 
-/*logo border*/
-#logo1 {
-  color: transparent;
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  -webkit-text-stroke: 3px black;
-  position: absolute;
-  top: 40%;
-  left: 5%;
-  font-size: 10em;
-  margin: 0%;
-  border: none;
-  animation: loadd2 3s both;
-}
-
-/*logo1 load*/
-@keyframes loadd2 {
-  99% {
-    opacity: 1;
-    -webkit-text-stroke: 3px black;
-  }
-  100% {
-    opacity: 0;
-    -webkit-text-stroke: 3px white;
-  }
-}
-/*logo loading*/
-#logo2 {
-  color: black;
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  animation: loadd 3s linear both;
-  position: absolute;
-  top: 40%;
-  left: 5%;
-  font-size: 10em;
-  margin: 0%;
-}
-
-/*logo2 loader*/
-@keyframes loadd {
-  0% {
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  }
-  25% {
-    clip-path: polygon(0 0, 33% 0, 32% 100%, 0 100%);
-    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
-  }
-  50% {
-    clip-path: polygon(0 0, 52% 0, 52% 100%, 0 100%);
-    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
-  }
-  75% {
-    clip-path: polygon(0 0, 74% 0, 73% 100%, 0 100%);
-    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
-  }
-  99% {
-    opacity: 1;
-  }
-  100% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    opacity: 0;
-  }
-}
+/*home container*/
 #containerr {
   animation: show 0.1s 3.2s both;
   opacity: 0;
@@ -119,13 +58,14 @@
     opacity: 1;
   }
 }
-/*logos*/
+/*home logos*/
 #logo {
   font-family: "Shrikhand", cursive;
   font-style: italic;
   text-align: center;
 }
 
+/*menu logo*/
 .logo {
   font-family: "Shrikhand", cursive;
   font-style: italic;
@@ -147,33 +87,6 @@
   text-align: center;
   font-weight: 100;
   color: grey;
-}
-
-/*button*/
-.button {
-  border: none;
-  min-width: 180px;
-  height: 50px;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
-  color: #faf8f8;
-  display: inline-flex;
-  border-radius: 100px;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 3em;
-  padding: 1em;
-  font-weight: 700;
-  box-shadow: 5px 10px 5px #cccbcb;
-}
-.button:hover {
-  filter: brightness(110%);
-}
-
-/*button container*/
-.wrapper {
-  display: flex;
-  justify-content: center;
 }
 
 /*order steps*/
@@ -206,36 +119,42 @@
   width: 1.8em;
 }
 
-/*icon*/
+/*icon1*/
 #insidei1 {
   margin: 1em;
   margin-left: 2em;
 }
 
+/*icon1*/
 #insidei2 {
   margin: 1em;
   margin-left: 2em;
 }
 
+/*icon3*/
 #insidei3 {
   margin: 1em;
   margin-left: 2em;
 }
 
+/*icon store*/
 .fa-store {
   color: #9356DC;
 }
 
+/*step1*/
 #choose {
   position: relative;
   left: 0.8em;
 }
 
+/*step3*/
 #go {
   position: relative;
   left: 0.1em;
 }
 
+/*step2*/
 #create {
   position: relative;
   left: 0.3em;
@@ -279,6 +198,7 @@
   color: black;
 }
 
+/*restaurant description*/
 .text--paris, .text--paris:visited {
   font-size: 2.8em;
   font-weight: 900;
@@ -302,6 +222,7 @@
   color: white;
 }
 
+/*checkbox heart*/
 .yes2 {
   transform: scaleX(4.5) scaleY(5);
   margin: 0%;
@@ -327,6 +248,7 @@
   left: -1.05em;
 }
 
+/*fill heart*/
 @keyframes fillheart {
   0% {
     clip-path: polygon(0 100%, 99% 100%, 100% 100%, 0% 100%);
@@ -337,10 +259,394 @@
     opacity: 1;
   }
 }
+/*links*/
 a, a:visited + .title {
   text-decoration: none;
 }
 
+/*footer container*/
+.footer {
+  background-color: #363636;
+  color: white;
+  padding: 0.3em;
+  width: 100%;
+}
+
+/*footer logo*/
+#logof {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  margin: 1em;
+  font-size: 3.1em;
+}
+
+/*text footer*/
+.text--f {
+  padding: 0.3em;
+  font-weight: 800;
+  font-size: 2.4em;
+  margin: 0.5em;
+}
+
+/*contact*/
+.mail {
+  color: white;
+}
+
+/* logo container*/
+#head {
+  display: grid;
+  grid-template: 5em/5% 95%;
+  border: none;
+  text-align: cente;
+  height: 6em;
+}
+
+.container--r {
+  background-color: whitesmoke;
+}
+
+/*Back arrow*/
+#back {
+  position: relative;
+  top: 40%;
+  right: -50%;
+  font-size: 3em;
+  border: none;
+}
+
+/*title restaurant*/
+.title--r {
+  text-align: left;
+  margin-left: 1.5em;
+  margin-top: 2em;
+  font-size: 2.5em;
+}
+
+/* dish container*/
+.steps {
+  border: none;
+  min-width: 180px;
+  background: white;
+  border-radius: 50px;
+  display: grid;
+  grid-template: 1fr/75% 5% 20%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0%;
+}
+
+/*triger*/
+.yes {
+  transform: scaleX(140) scaleY(13);
+  cursor: pointer;
+  position: relative;
+  opacity: 0;
+  left: 37em;
+  top: 10em;
+  z-index: 4;
+}
+.yes:checked ~ * .checkl {
+  transform: scaleX(1);
+}
+
+/*triger*/
+.yes:checked ~ * .shrink {
+  animation: gridd 0.5s linear both;
+}
+
+/*span price*/
+span {
+  right: -1.7em;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+/*rotate circle*/
+.yes:checked ~ * .fa-check-circle {
+  transform: rotate(0deg);
+}
+
+/*check circle*/
+.fa-check-circle {
+  transform: rotate(-360deg);
+  transition: transform 0.5s linear;
+}
+
+/*translate circle*/
+.yes:checked ~ * span {
+  transform: translate(-2.5em, 0);
+}
+
+@keyframes gridd {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+/*grid animation*/
+@keyframes grid {
+  0% {
+    grid-template: 1fr/80% 10% 10%;
+  }
+  100% {
+    grid-template: 1fr/70% 10% 20%;
+  }
+}
+/*check effect*/
+@keyframes checkedl {
+  to {
+    transform: scalex(1);
+  }
+}
+/*dish effect*/
+@keyframes load {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  1% {
+    transform: translate(0, 3em);
+  }
+  90% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+/*food name*/
+.fname {
+  font-size: 3.2em;
+  margin-left: 0.7em;
+  margin-top: 0.5em;
+}
+
+/*food description*/
+.fdescription {
+  font-size: 2em;
+  margin-left: 1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*price*/
+.price {
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  margin-bottom: 1em;
+  font-size: 2.8em;
+}
+
+/*check*/
+.checkl {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #99E2D0;
+  justify-content: center;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s linear;
+}
+
+/*order container*/
+.order {
+  text-align: center;
+  margin-top: 5em;
+}
+
+/*menu container*/
+.cover {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: relative;
+  top: -7em;
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 0%;
+  border: none;
+}
+
+/*title & heart container*/
+.th {
+  display: grid;
+  grid-template: 1fr/90% 10%;
+  border: none;
+}
+
+/*heart*/
+.heartu3 {
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  font-size: 3.4em;
+  margin-top: 2em;
+  margin-right: 6em;
+}
+
+/*food step*/
+.dish {
+  margin-left: 2em;
+  margin-bottom: 0.3em;
+  font-size: 2em;
+}
+
+/*dish container*/
+.zero {
+  min-width: 180px;
+  background: white;
+  border-radius: 50px;
+  border: none;
+  padding: 0%;
+  width: 95%;
+  overflow: hidden;
+  animation: load 1500ms;
+  animation-fill-mode: backwards;
+  box-shadow: 5px 10px 5px #b9b8b8;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 1em;
+}
+.zero--1 {
+  animation-delay: 150ms;
+}
+.zero--2 {
+  animation-delay: 300ms;
+}
+.zero--3 {
+  animation-delay: 450ms;
+}
+.zero--4 {
+  animation-delay: 600ms;
+}
+.zero--5 {
+  animation-delay: 750ms;
+}
+.zero--6 {
+  animation-delay: 900ms;
+}
+.zero--7 {
+  animation-delay: 1050ms;
+}
+.zero--8 {
+  animation-delay: 1200ms;
+}
+.zero--9 {
+  animation-delay: 1350ms;
+}
+.zero--10 {
+  animation-delay: 1500ms;
+}
+
+/*check circle*/
+.fa-check-circle {
+  font-size: 4em;
+  color: white;
+}
+
+/*button*/
+.button {
+  border: none;
+  min-width: 180px;
+  height: 50px;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
+  color: #faf8f8;
+  display: inline-flex;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 3em;
+  padding: 1em;
+  font-weight: 700;
+  box-shadow: 5px 10px 5px #cccbcb;
+}
+.button:hover {
+  filter: brightness(110%);
+}
+
+/*button container*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/*logo border*/
+#logo1 {
+  color: transparent;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  -webkit-text-stroke: 3px black;
+  position: absolute;
+  top: 40%;
+  left: 4%;
+  font-size: 10em;
+  margin: 0%;
+  border: none;
+  animation: loadd2 3s both;
+}
+
+/*logo1 load*/
+@keyframes loadd2 {
+  99% {
+    opacity: 1;
+    -webkit-text-stroke: 3px black;
+  }
+  100% {
+    opacity: 0;
+    -webkit-text-stroke: 3px white;
+  }
+}
+/*logo loading*/
+#logo2 {
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  animation: loadd 3s linear both;
+  position: absolute;
+  top: 40%;
+  left: 4%;
+  font-size: 10em;
+  margin: 0%;
+}
+
+/*logo2 loader*/
+@keyframes loadd {
+  0% {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  25% {
+    clip-path: polygon(0 0, 33% 0, 32% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+  }
+  50% {
+    clip-path: polygon(0 0, 52% 0, 52% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.25, 0.25, 1);
+  }
+  75% {
+    clip-path: polygon(0 0, 74% 0, 73% 100%, 0 100%);
+    animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    opacity: 0;
+  }
+}
+/*desktop*/
 @media all and (min-width: 990px) {
   .heartu1 {
     font-size: 5em;
@@ -472,291 +778,6 @@ a, a:visited + .title {
     left: 6.8em;
     font-size: 4em;
   }
-}
-/*footer container*/
-.footer {
-  background-color: #363636;
-  color: white;
-  padding: 0.3em;
-  width: 100%;
-}
-
-/*footer logo*/
-#logof {
-  font-family: "Shrikhand", cursive;
-  font-style: italic;
-  margin: 1em;
-  font-size: 3.1em;
-}
-
-/*text footer*/
-.text--f {
-  padding: 0.3em;
-  font-weight: 800;
-  font-size: 2.4em;
-  margin: 0.5em;
-}
-
-/*contact*/
-.mail {
-  color: white;
-}
-
-/* logo container*/
-#head {
-  display: grid;
-  grid-template: 5em/5% 95%;
-  border: none;
-  text-align: cente;
-  height: 6em;
-}
-
-/*Back arrow*/
-#back {
-  position: relative;
-  top: 40%;
-  right: -50%;
-  font-size: 3em;
-  border: none;
-}
-
-/*title restaurant*/
-.title--r {
-  text-align: left;
-  margin-left: 1.5em;
-  margin-top: 2em;
-  font-size: 2.5em;
-}
-
-/* dish container*/
-.steps {
-  border: none;
-  min-width: 180px;
-  background: white;
-  border-radius: 50px;
-  display: grid;
-  grid-template: 1fr/75% 5% 20%;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0%;
-}
-
-.oo {
-  width: 100%;
-}
-
-/*triger*/
-.yes {
-  transform: scaleX(140) scaleY(13);
-  cursor: pointer;
-  position: relative;
-  opacity: 0;
-  left: 37em;
-  top: 10em;
-  z-index: 4;
-}
-.yes:checked ~ * .checkl {
-  transform: scaleX(1);
-}
-
-/*triger*/
-.yes:checked ~ * .shrink {
-  animation: gridd 0.5s linear both;
-}
-
-span {
-  right: -1.7em;
-  position: relative;
-  transition: transform 0.5s linear;
-}
-
-.yes:checked ~ * .fa-check-circle {
-  transform: rotate(0deg);
-}
-
-.fa-check-circle {
-  transform: rotate(-360deg);
-  transition: transform 0.5s linear;
-}
-
-.yes:checked ~ * span {
-  transform: translate(-2.5em, 0);
-}
-
-@keyframes gridd {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-/*grid animation*/
-@keyframes grid {
-  0% {
-    grid-template: 1fr/80% 10% 10%;
-  }
-  100% {
-    grid-template: 1fr/70% 10% 20%;
-  }
-}
-/*check effect*/
-@keyframes checkedl {
-  to {
-    transform: scalex(1);
-  }
-}
-/*dish effect*/
-@keyframes load {
-  0% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  1% {
-    transform: translate(0, 3em);
-  }
-  90% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-/*food name*/
-.fname {
-  font-size: 3.2em;
-  margin-left: 0.7em;
-  margin-top: 0.5em;
-}
-
-/*food description*/
-.fdescription {
-  font-size: 2em;
-  margin-left: 1em;
-  margin-top: 0.1em;
-  margin-bottom: 0.3em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/*price*/
-.price {
-  display: flex;
-  position: relative;
-  align-self: flex-end;
-  margin-bottom: 1em;
-  font-size: 2.8em;
-}
-
-/*check*/
-.checkl {
-  display: flex;
-  position: relative;
-  align-items: center;
-  background-color: #99E2D0;
-  justify-content: center;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.5s linear;
-}
-
-/*order container*/
-.order {
-  text-align: center;
-  margin-top: 5em;
-}
-
-/*menu container*/
-.cover {
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  position: relative;
-  top: -7em;
-  background-color: whitesmoke;
-  width: 100%;
-  margin: 0%;
-  border: none;
-}
-
-/*title & heart container*/
-.th {
-  display: grid;
-  grid-template: 1fr/90% 10%;
-  border: none;
-}
-
-/*heart*/
-.heartu3 {
-  display: flex;
-  position: relative;
-  align-self: flex-end;
-  font-size: 3.4em;
-  margin-top: 2em;
-  margin-right: 6em;
-}
-
-/*food step*/
-.dish {
-  margin-left: 2em;
-  margin-bottom: 0.3em;
-  font-size: 2em;
-}
-
-.zero {
-  min-width: 180px;
-  background: white;
-  border-radius: 50px;
-  border: none;
-  padding: 0%;
-  width: 95%;
-  overflow: hidden;
-  animation: load 1500ms;
-  animation-fill-mode: backwards;
-  box-shadow: 5px 10px 5px #b9b8b8;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: 1em;
-}
-.zero--1 {
-  animation-delay: 150ms;
-}
-.zero--2 {
-  animation-delay: 300ms;
-}
-.zero--3 {
-  animation-delay: 450ms;
-}
-.zero--4 {
-  animation-delay: 600ms;
-}
-.zero--5 {
-  animation-delay: 750ms;
-}
-.zero--6 {
-  animation-delay: 900ms;
-}
-.zero--7 {
-  animation-delay: 1050ms;
-}
-.zero--8 {
-  animation-delay: 1200ms;
-}
-.zero--9 {
-  animation-delay: 1350ms;
-}
-.zero--10 {
-  animation-delay: 1500ms;
-}
-
-/*check circle*/
-.fa-check-circle {
-  font-size: 4em;
-  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

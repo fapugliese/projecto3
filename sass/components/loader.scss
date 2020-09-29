@@ -1,0 +1,69 @@
+
+/*logo border*/
+#logo1{
+    color: transparent;
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
+    -webkit-text-stroke: 3px black;
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    font-size: 10em;
+    margin: 0%;
+    border: none;
+    animation: loadd2 3s both;
+  }
+  
+  /*logo1 load*/
+  @keyframes loadd2{
+    0%{
+    }
+    99%{
+      opacity: 1;
+      -webkit-text-stroke: 3px black;
+    }
+    100%{
+      opacity: 0;
+      -webkit-text-stroke: 3px white;
+    }
+  }
+  
+  /*logo loading*/
+  #logo2{
+    color: black;
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
+    animation: loadd 3s linear both;
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    font-size: 10em;
+    margin: 0%;
+  }
+  
+  /*logo2 loader*/
+  @keyframes loadd{
+    0%{
+      clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    25%{
+      clip-path: polygon(0 0, 33% 0, 32% 100%, 0 100%);
+      animation-timing-function: cubic-bezier(.9,0,.1,1);
+    }
+    50%{
+      clip-path: polygon(0 0, 52% 0, 52% 100%, 0 100%);
+      animation-timing-function: cubic-bezier(.25,0.25,1);
+    }
+    75%{
+      clip-path: polygon(0 0, 74% 0, 73% 100%, 0 100%);
+      animation-timing-function: cubic-bezier(.9,0,.1,1);
+    }
+    99%{
+      opacity: 1;
+    }
+    100%{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      opacity: 0;
+    }
+  }
+  

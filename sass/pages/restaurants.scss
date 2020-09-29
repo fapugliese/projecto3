@@ -12,6 +12,9 @@ $covercolor: darken(white, 4%);
     height: 6em;
 }
 
+.container--r{
+    background-color: $covercolor;
+}
 
 
 /*Back arrow*/
@@ -45,9 +48,7 @@ $covercolor: darken(white, 4%);
     margin: 0%; 
 }
 
-.oo{
-    width: 100%;
-}
+
 
 /*triger*/
 .yes{
@@ -67,20 +68,26 @@ $covercolor: darken(white, 4%);
 .yes:checked ~ * .shrink{
     animation: gridd 0.5s linear both; 
 }
+
+/*span price*/
 span{
     right: -1.7em;
     position: relative;
     transition: transform 0.5s linear;
 }
 
+/*rotate circle*/
 .yes:checked ~ * .fa-check-circle{
     transform: rotate(0deg);
 }
 
+/*check circle*/
 .fa-check-circle{
     transform: rotate(-360deg);
     transition: transform 0.5s linear;
 }
+
+/*translate circle*/
 .yes:checked ~ * span {
         transform: translate(-2.5em, 0);
     }
@@ -211,6 +218,7 @@ span{
         font-size: 2em;
     }
 
+    /*dish container*/
     .zero{
     min-width: 180px;
     background: white;
