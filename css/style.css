@@ -4,6 +4,7 @@
   width: 100%;
   border: none;
   margin: 0px;
+  border: none;
   overflow: hidden;
 }
 
@@ -26,6 +27,12 @@
 }
 
 /*main loog*/
+.logo {
+  position: relative;
+  font-size: 4em;
+  top: -0.5em;
+}
+
 #logo {
   font-size: 4em;
 }
@@ -119,6 +126,12 @@
   text-align: center;
 }
 
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  text-align: center;
+}
+
 /*texts*/
 .text {
   font-family: "Roboto", sans-serif;
@@ -141,19 +154,20 @@
   border: none;
   min-width: 180px;
   height: 50px;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
   color: #faf8f8;
   display: inline-flex;
   border-radius: 100px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   font-size: 3em;
   padding: 1em;
   font-weight: 700;
   box-shadow: 5px 10px 5px #cccbcb;
 }
 .button:hover {
-  background-color: #ff88de;
+  filter: brightness(110%);
 }
 
 /*button container*/
@@ -179,7 +193,9 @@
 
 /*number margin*/
 .inside {
-  margin: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 1em;
 }
 
 /*number font*/
@@ -191,9 +207,38 @@
 }
 
 /*icon*/
-#insidei {
+#insidei1 {
   margin: 1em;
   margin-left: 2em;
+}
+
+#insidei2 {
+  margin: 1em;
+  margin-left: 2em;
+}
+
+#insidei3 {
+  margin: 1em;
+  margin-left: 2em;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+#choose {
+  position: relative;
+  left: 0.8em;
+}
+
+#go {
+  position: relative;
+  left: 0.1em;
+}
+
+#create {
+  position: relative;
+  left: 0.3em;
 }
 
 /*restaurant container*/
@@ -206,6 +251,7 @@
 .img {
   display: inline-block;
   margin-bottom: 0%;
+  object-fit: cover;
 }
 
 /*image border*/
@@ -246,7 +292,7 @@
 
 /*title margin*/
 .title--margin {
-  margin-left: 2.5em;
+  margin-left: 1.5em;
 }
 
 /*heart back*/
@@ -256,7 +302,7 @@
   color: white;
 }
 
-#yes2 {
+.yes2 {
   transform: scaleX(4.5) scaleY(5);
   margin: 0%;
   cursor: pointer;
@@ -267,7 +313,7 @@
   z-index: 1;
   opacity: 0;
 }
-#yes2:checked ~ * .heartu2 {
+.yes2:checked ~ * .heartu2 {
   animation: fillheart 1s ease-in-out forwards;
 }
 
@@ -304,6 +350,7 @@ a, a:visited + .title {
 
   .heartu2 {
     position: relative;
+    left: 0em;
     top: -1.02em;
     font-size: 5em;
     margin: 0.01em;
@@ -332,12 +379,106 @@ a, a:visited + .title {
     top: 40%;
     left: 20%;
   }
+
+  .img--1 {
+    overflow: hidden;
+    margin-top: -30em;
+    margin-bottom: -10em;
+    width: 100%;
+  }
+
+  #head {
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  #paris {
+    font-size: 1.7em;
+  }
+
+  #discover {
+    font-size: 1.7em;
+  }
+
+  .button--explore {
+    font-size: 1.7em;
+  }
+
+  .inside {
+    font-size: 0.8em;
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    margin-right: 0.2em;
+  }
+
+  .step {
+    width: 62%;
+    margin-left: 1em;
+  }
+
+  #insidei1 {
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    position: relative;
+    left: -2.6em;
+  }
+
+  #insidei2 {
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    position: relative;
+    left: -2.6em;
+  }
+
+  #insidei3 {
+    margin-top: 1em;
+    margin-bottom: 0.7em;
+    position: relative;
+    left: -2.6em;
+  }
+
+  #choose {
+    position: relative;
+    left: -1.9em;
+  }
+
+  #go {
+    position: relative;
+    left: -2.6em;
+  }
+
+  #create {
+    position: relative;
+    left: -2.4em;
+  }
+
+  #number {
+    position: relative;
+    left: -2.5em;
+  }
+
+  #desc {
+    margin-left: 20.5%;
+  }
+
+  .title--margin {
+    position: relative;
+    left: 4em;
+  }
+
+  #resta {
+    position: relative;
+    left: 6.8em;
+    font-size: 4em;
+  }
 }
 /*footer container*/
 .footer {
   background-color: #363636;
   color: white;
   padding: 0.3em;
+  width: 100%;
 }
 
 /*footer logo*/
@@ -345,14 +486,14 @@ a, a:visited + .title {
   font-family: "Shrikhand", cursive;
   font-style: italic;
   margin: 1em;
-  font-size: 2.2em;
+  font-size: 3.1em;
 }
 
 /*text footer*/
 .text--f {
   padding: 0.3em;
   font-weight: 800;
-  font-size: 1.7em;
+  font-size: 2.4em;
   margin: 0.5em;
 }
 
@@ -366,7 +507,7 @@ a, a:visited + .title {
   display: grid;
   grid-template: 5em/5% 95%;
   border: none;
-  text-align: center;
+  text-align: cente;
   height: 6em;
 }
 
@@ -401,14 +542,19 @@ a, a:visited + .title {
   margin: 0%;
 }
 
+.oo {
+  width: 100%;
+}
+
 /*triger*/
 .yes {
-  transform: scaleX(120) scaleY(13);
+  transform: scaleX(140) scaleY(13);
   cursor: pointer;
   position: relative;
   opacity: 0;
-  left: 54em;
+  left: 37em;
   top: 10em;
+  z-index: 4;
 }
 .yes:checked ~ * .checkl {
   transform: scaleX(1);
@@ -487,7 +633,7 @@ span {
 
 /*food description*/
 .fdescription {
-  font-size: 2.3em;
+  font-size: 2em;
   margin-left: 1em;
   margin-top: 0.1em;
   margin-bottom: 0.3em;
@@ -522,6 +668,7 @@ span {
 /*order container*/
 .order {
   text-align: center;
+  margin-top: 5em;
 }
 
 /*menu container*/

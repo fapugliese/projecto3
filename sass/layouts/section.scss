@@ -1,3 +1,7 @@
+$primary:  (#9356DC);
+$secondary: (#FF79DA);
+$buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
+
 /*discover text*/
 #discover{
     text-align: center;
@@ -10,18 +14,19 @@
     border: none;
     min-width: 180px;
     height: 50px;
-    background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+    background-image:  $buttoncolor;
     color: rgb(250, 248, 248);
     display: inline-flex;
     border-radius: 100px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     font-size: 3em;
     padding: 1em;
     font-weight: 700;
     box-shadow: 5px 10px 5px rgb(204, 203, 203);
     &:hover{
-        background-color: lighten( #FF79DA, 3%);
+        filter: brightness(110%);
     }
     }
 
@@ -49,9 +54,11 @@
 
     /*number margin*/
     .inside{
-        margin: 1em;
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-bottom: 1em;
         
-    }
+     }
 
     /*number font*/
     .inside--number{
@@ -59,10 +66,36 @@
         left: -1em;
         color: #9356DC;
         width: 1.8em;
+        
     }
 
     /*icon*/
-    #insidei{
+    #insidei1{
         margin: 1em; 
         margin-left: 2em;
     }
+    #insidei2{
+        margin: 1em; 
+        margin-left: 2em;
+    }
+    #insidei3{
+        margin: 1em; 
+        margin-left: 2em;
+    }
+
+    .fa-store{
+        color: #9356DC;   
+    }
+
+    #choose{
+        position: relative;
+        left: 0.8em;
+     }   
+     #go{
+        position: relative;
+        left: 0.1em;
+     }
+     #create{
+        position: relative;
+        left: 0.3em;
+     }

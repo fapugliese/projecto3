@@ -8,9 +8,11 @@ $covercolor: darken(white, 4%);
     display: grid;
     grid-template: 5em/ 5% 95%;
     border: none;
-    text-align: center; 
+    text-align: cente; 
     height: 6em;
 }
+
+
 
 /*Back arrow*/
 #back{
@@ -43,14 +45,19 @@ $covercolor: darken(white, 4%);
     margin: 0%; 
 }
 
+.oo{
+    width: 100%;
+}
+
 /*triger*/
 .yes{
-    transform: scaleX(120) scaleY(13);
+    transform: scaleX(140) scaleY(13);
     cursor: pointer;
     position: relative;
     opacity: 0;
-    left: 54em;
+    left: 37em;
     top: 10em;
+    z-index: 4;
 &:checked ~ * .checkl {
     transform: scaleX(1);
 }
@@ -58,8 +65,7 @@ $covercolor: darken(white, 4%);
 
 /*triger*/
 .yes:checked ~ * .shrink{
-    animation: gridd 0.5s linear both;
-   
+    animation: gridd 0.5s linear both; 
 }
 span{
     right: -1.7em;
@@ -132,7 +138,7 @@ span{
 
 /*food description*/
 .fdescription{
-    font-size: 2.3em;
+    font-size: 2em;
     margin-left: 1em;
     margin-top: 0.1em;
     margin-bottom: 0.3em;
@@ -166,6 +172,7 @@ span{
 /*order container*/
     .order{
         text-align: center;
+        margin-top: 5em;
     }
 
     /*menu container*/

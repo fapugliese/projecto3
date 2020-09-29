@@ -5,7 +5,12 @@
 }
 
 /*main loog*/
-#logo{
+.logo{
+  position: relative;
+  font-size: 4em;
+  top: -0.5em;
+}
+#logo{  
   font-size: 4em;
 }
 /*book menu*/
