@@ -27,7 +27,7 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
     /*number margin*/
     .inside{
         margin-top: 1em;
-        margin-left: 1em;
+        margin-left: 2em;
         margin-bottom: 1em;
         
     }
@@ -61,7 +61,7 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
 
     /*icon store*/
     .fa-store{
-        color: #9356DC;   
+        color: $primary;   
     }
 
     /*step1*/
@@ -81,3 +81,15 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
         position: relative;
         left: 0.3em;
      }
+
+     .icon{
+        width: 5%;
+        position: relative;
+        left: -1.5em;
+    }
+
+    #store{
+        fill: $primary;
+    }
+
+   

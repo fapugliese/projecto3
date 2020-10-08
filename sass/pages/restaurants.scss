@@ -15,14 +15,20 @@ $covercolor: darken(white, 4%);
 .container--r{
     background-color: $covercolor;
 }
+.bodyr{
+    width: 100%;
+    border: none;
+    margin: 0%;
+    background-color: brown;
+}
 
 
 /*Back arrow*/
-#back{
+.back{
     position: relative;
     top: 40%;
     right: -50%;
-    font-size: 3em;
+    width: 40%;
     border: none;
 }
 
@@ -85,6 +91,7 @@ span{
 .fa-check-circle{
     transform: rotate(-360deg);
     transition: transform 0.5s linear;
+    width: 30%;
 }
 
 /*translate circle*/

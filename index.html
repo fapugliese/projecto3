@@ -7,9 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="./css/style.css" rel="stylesheet">
-  <link href="./css/all.min.css" rel="stylesheet">
-  <link href="./css/fontawesome.min.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">  
 </head>
 
@@ -32,32 +29,34 @@
     
     <section>
       
-      <div>
+      <div id="wrap">
         <h2 class="title" id="book">Book the menu you like</h2>
         <h3 id="discover">Discover top-of-the-art restaurants we picked for you</h3>
         <div class="wrapper">
           <button type="button" class="button">Explore our restaurants</button>
         </div>
       </div>
-      <div id="desc">
-      <div>
-        <h2 class="title title--margin">How it works</h2>
+      <div class="desc">
+        <div id="hoow">
+        <h2 id="how" class="title title--margin">How it works</h2>
+        </div>
+        <div id="stepc">
         <h4 class="step">
           <img id="number1" class="inside inside--number" alt="one" src="./images/1.png"/>
-          <i id="insidei1" class="fas fa-mobile-alt"></i>
+          <img class="icon" src="./images/mobile-alt-solid.svg" alt="phone">
           <span id="choose" class="inside">Choose a restaurant</span>
         </h4>
         <h4 class="step">
           <img id="number2" class="inside inside--number" alt="two" src="./images/2.png"/>
-          <i id="insidei2" class="fas fa-list-ul"></i>
+          <img class="icon" src="./images/list-ul-solid.svg" alt="list">
           <span id="create" class="inside">Create your menu</span>
         </h4>
         <h4 class="step">
           <img id="number3" class="inside inside--number" alt="three" src="./images/3.png"/>
-          <i id="insidei3" class="fas fa-store"></i>
+          <img id="store" class="icon" src="./images/store-solid.svg" alt="store">
           <span id="go" class="inside">Go enjoy it at the restaurant</span>
         </h4>
-      </div>
+        </div>
     </div>
     </section>
     
@@ -78,8 +77,8 @@
           <div> 
             <input type="checkbox" name="click" class="yes2">             
             <div>
-              <i class="fas fa-heart heartu1"></i>
-              <i class="fas fa-heart heartu2"></i>
+              <img  class="heartu1" src="./images/heart-solid.svg" alt="heart">
+              <img  class="heartu2" src="./images/heart-solid1.svg" alt="heart">
             </div> 
           </div>
         </div>
@@ -96,8 +95,8 @@
         <div> 
           <input type="checkbox" name="click" class="yes2">             
           <div>
-            <i class="fas fa-heart heartu1"></i>
-            <i class="fas fa-heart heartu2"></i>
+            <img  class="heartu1" src="./images/heart-solid.svg" alt="heart">
+            <img  class="heartu2" src="./images/heart-solid1.svg" alt="heart">
           </div> 
         </div>
       </div>
@@ -114,8 +113,8 @@
         <div> 
           <input type="checkbox" name="click" class="yes2">             
           <div>
-            <i class="fas fa-heart heartu1"></i>
-            <i class="fas fa-heart heartu2"></i>
+            <img  class="heartu1" src="./images/heart-solid.svg" alt="heart">
+            <img  class="heartu2" src="./images/heart-solid1.svg" alt="heart">
           </div> 
         </div>
       </div>
@@ -132,8 +131,8 @@
         <div> 
           <input type="checkbox" name="click" class="yes2">             
           <div>
-            <i class="fas fa-heart heartu1"></i>
-            <i class="fas fa-heart heartu2"></i>
+            <img  class="heartu1" src="./images/heart-solid.svg" alt="heart">
+            <img  class="heartu2" src="./images/heart-solid1.svg" alt="heart">
           </div> 
         </div>
       </div>
@@ -144,11 +143,11 @@
     <footer class="footer">
       <h5 id="logof">ohmyfood</h5>
       <h6 class="text text--f"> 
-        <i class="fas fa-utensils"></i>
+        <img id="utensils" class="icon icon--footer" src="./images/utensils-solid.svg" alt="utensils">
         <span class="ftext">Suggest a restaurant</span>
       </h6>
       <h6 class="text text--f">
-        <i class="fas fa-hands-helping"></i>
+        <img id="hands" class="icon icon--footer" src="./images/hands-helping-solid.svg" alt="hands helping">
         <span class="ftext">Become a partner</span>
       </h6>
       <h6 class="text text--f">Legal</h6>

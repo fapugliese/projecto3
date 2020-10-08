@@ -4,7 +4,7 @@
   width: 100%;
   border: none;
   margin: 0px;
-  border: none;
+  border: 0px;
   overflow: hidden;
 }
 
@@ -107,7 +107,7 @@
 /*number margin*/
 .inside {
   margin-top: 1em;
-  margin-left: 1em;
+  margin-left: 2em;
   margin-bottom: 1em;
 }
 
@@ -158,6 +158,16 @@
 #create {
   position: relative;
   left: 0.3em;
+}
+
+.icon {
+  width: 5%;
+  position: relative;
+  left: -1.5em;
+}
+
+#store {
+  fill: #9356DC;
 }
 
 /*restaurant container*/
@@ -273,6 +283,7 @@ a, a:visited + .title {
   color: white;
   padding: 0.3em;
   width: 100%;
+  margin: 0%;
 }
 
 /*footer logo*/
@@ -309,12 +320,19 @@ a, a:visited + .title {
   background-color: whitesmoke;
 }
 
+.bodyr {
+  width: 100%;
+  border: none;
+  margin: 0%;
+  background-color: brown;
+}
+
 /*Back arrow*/
-#back {
+.back {
   position: relative;
   top: 40%;
   right: -50%;
-  font-size: 3em;
+  width: 40%;
   border: none;
 }
 
@@ -375,6 +393,7 @@ span {
 .fa-check-circle {
   transform: rotate(-360deg);
   transition: transform 0.5s linear;
+  width: 30%;
 }
 
 /*translate circle*/
@@ -560,6 +579,7 @@ span {
 
 /*button*/
 .button {
+  text-align: center;
   border: none;
   min-width: 180px;
   height: 50px;
@@ -583,6 +603,12 @@ span {
 .wrapper {
   display: flex;
   justify-content: center;
+  margin: 0%;
+  border: 0em;
+}
+
+#wrap {
+  border: 0em;
 }
 
 /*logo border*/
@@ -652,28 +678,32 @@ span {
 /*desktop*/
 @media all and (min-width: 1100px) {
   .heartu1 {
-    font-size: 5em;
+    width: 0.7em;
     margin: 0.01em;
     color: #fdfcfc;
     position: relative;
-    top: -2.8em;
-    left: 7em;
+    left: 3.4em;
+    top: -1.4em;
   }
 
   .heartu2 {
     position: relative;
-    left: 5.93em;
-    top: -2.8em;
-    font-size: 5em;
+    left: 2.628em;
+    width: 0.7em;
     margin: 0.01em;
     color: #9356DC;
     opacity: 0;
+    top: -1.4em;
+  }
+
+  .heartu3 {
+    font-size: 2em;
   }
 
   .yes2 {
     position: relative;
-    left: 44.5em;
-    top: -12.9em;
+    left: 21.9em;
+    top: -5.3em;
   }
 
   .yes {
@@ -683,7 +713,15 @@ span {
 
   .rcontainer {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+  .restaurant {
+    margin: 1.5em;
+  }
+
+  #logo {
+    font-size: 2.4em;
   }
 
   #logo1 {
@@ -711,28 +749,32 @@ span {
     z-index: 1;
   }
 
+  #book {
+    font-size: 1.9em;
+  }
+
   #paris {
-    font-size: 1.7em;
+    font-size: 1.2em;
   }
 
   #discover {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
 
-  .button--explore {
-    font-size: 1.7em;
+  .button {
+    font-size: 1.1em;
   }
 
   .inside {
-    font-size: 0.8em;
+    font-size: 0.5em;
     margin-top: 1em;
-    margin-bottom: 0.7em;
-    margin-right: 0.2em;
+    margin-bottom: 0.5em;
+    margin-right: 0em;
   }
 
   .step {
-    width: 62%;
-    margin-left: 1em;
+    width: 80%;
+    margin-left: 0.7em;
   }
 
   #insidei1 {
@@ -758,47 +800,113 @@ span {
 
   #choose {
     position: relative;
-    left: -1.9em;
+    left: -1.3em;
   }
 
   #go {
     position: relative;
-    left: -2.6em;
+    left: -3.5em;
   }
 
   #create {
     position: relative;
-    left: -2.4em;
+    left: -1.5em;
   }
 
-  #number1 {
+  .inside--number {
     position: relative;
-    left: -2.5em;
+    left: -4.1em;
   }
 
-  #number2 {
+  #how {
+    text-align: center;
+    font-size: 1.7em;
     position: relative;
-    left: -2.5em;
-  }
-
-  #number3 {
-    position: relative;
-    left: -2.5em;
-  }
-
-  #desc {
-    margin-left: 20.5%;
-  }
-
-  .title--margin {
-    position: relative;
-    left: 4em;
+    left: -0.8em;
   }
 
   #resta {
+    text-align: center;
+    font-size: 2.2em;
     position: relative;
-    left: 6.8em;
-    font-size: 4em;
+    left: -1em;
+  }
+
+  .desc {
+    border: 0px;
+  }
+
+  .icon {
+    width: 4%;
+    position: relative;
+    left: -1.5em;
+  }
+
+  .title {
+    font-size: 1.3em;
+    margin-top: 1em;
+  }
+
+  .text--paris {
+    font-size: 1.2em;
+  }
+
+  #logof {
+    font-size: 1.2em;
+  }
+
+  .text--f {
+    font-size: 0.85em;
+  }
+
+  .fas {
+    position: relative;
+    left: 5em;
+    font-size: 1em;
+    color: brown;
+  }
+
+  .icon--footer {
+    width: 1.3%;
+    margin-left: 1.9em;
+  }
+
+  .fname {
+    font-size: 2em;
+  }
+
+  .fdescription {
+    font-size: 1.3em;
+  }
+
+  .price {
+    font-size: 2em;
+  }
+
+  .zero {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .dish {
+    font-size: 1.4em;
+    text-align: center;
+  }
+
+  .title--r {
+    text-align: center;
+    position: relative;
+    left: 3.3em;
+    font-size: 1.6em;
+  }
+
+  #stepc {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
+
+  #store {
+    width: 6%;
   }
 }
 

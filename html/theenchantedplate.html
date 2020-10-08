@@ -6,15 +6,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
-  <link href="../css/all.min.css" rel="stylesheet">
-  <link href="../css/fontawesome.min.css" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
-  
-</head>
-<body>
+  </head>
+
+  <body class="bodyr">
 <div class="container container--r">
 <div id="head">
-  <a href="../index.html"><i class="fas fa-arrow-left" id="back"></i></a>
+  <a href="../index.html"><img class="back" src="../images/arrow-left-solid.svg" alt="back"></i></a>
   <h1 class="logo">ohmyfood</h1>
 </div>
 <p><img class="img img--1" src="../images/plate2.jpeg" alt="Trulli"></p>
@@ -26,14 +23,16 @@
   <h4 class="dish text">ENTREES</h4>
     <div>
       <input type="checkbox" name="my-input" class="yes">
-  <div class="zero zero--1">
-  <div class="steps steps--1">
-    <div class="shrink">
-    <h3 class="fname">Foie Gras Ravioli</h3>
-    <p class="fdescription text">With truffle cream</p>
-    </div>
+      <div class="zero zero--1">
+        <div class="steps steps--1">
+          <div class="shrink">
+            <h3 class="fname">Foie Gras Ravioli</h3>
+            <p class="fdescription text">With truffle cream</p>
+          </div>
     <div class="price"><span>25€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl">
+      <img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check">
+    </div>
    </div>
   </div>
   </div>
@@ -46,7 +45,7 @@
     <p class="fdescription text">With buckwheat blinis</p>
     </div>
     <div class="price"><span>35€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
    </div>
   </div>
   </div>
@@ -59,7 +58,7 @@
     <p class="fdescription text">Marinated with orange zest</p>
   </div>
     <div class="price"><span>20€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
    </div>
   </div>
   </div>
@@ -72,7 +71,7 @@
     <p class="fdescription text">With fig jam and grilled baguette</p>
   </div>
     <div class="price"><span>35€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
    </div>
   </div>
   </div>
@@ -86,7 +85,7 @@
     <p class="fdescription text">With white celery puree</p>           
     </div>
   <div class="price"><span>40€</span></div>
-  <div class="checkl"><i class="fas fa-check-circle"></i></div>
+  <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
   </div>
 </div>
 </div>
@@ -99,7 +98,7 @@
     <p class="fdescription text">With mashed sweet potatoes</p>
   </div>
     <div class="price"><span>35€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
    </div>
   </div>
   </div>
@@ -112,7 +111,7 @@
     <p class="fdescription text">With wild rice snd lemon zest</p>
   </div>
     <div class="price"><span>44€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
    </div>
    </div>
    </div>
@@ -126,7 +125,7 @@
     <p class="fdescription text">With caramel butter ice cream</p>
   </div>
     <div class="price"><span>18€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
    </div>
   </div>
   </div>
@@ -139,7 +138,7 @@
     <p class="fdescription text">With lemon drizzle</p>
   </div>
     <div class="price"><span>22€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
    </div>
   </div>
   </div>
@@ -152,7 +151,7 @@
     <p class="fdescription text">Destructured </p>
     </div>
     <div class="price"><span>23€</span></div>
-    <div class="checkl"><i class="fas fa-check-circle"></i></div>
+    <div class="checkl"><img class="fa-check-circle" src="../images/check-circle-solid.svg" alt="check"></div>
    </div>
   </div>
 </div>
@@ -160,21 +159,20 @@
    <button type="button" class="button buttom--order">Order</button>
   </div>
   </div>
- <footer class="footer">
-  <h5 id="logof">ohmyfood<h5>
+  <footer class="footer">
+    <h5 id="logof">ohmyfood</h5>
     <h6 class="text text--f"> 
-     <i class="fas fa-utensils"></i>
-     <span class="ftext">Suggest a restaurant</span>
+      <img id="utensils" class="icon icon--footer" src="../images/utensils-solid.svg" alt="utensils">
+      <span class="ftext">Suggest a restaurant</span>
     </h6>
     <h6 class="text text--f">
-      <i class="fas fa-hands-helping"></i>
+      <img id="hands" class="icon icon--footer" src="../images/hands-helping-solid.svg" alt="hands helping">
       <span class="ftext">Become a partner</span>
     </h6>
     <h6 class="text text--f">Legal</h6>
     <h6 class="text text--f"><a class="mail" href="mailto:facundopugliese@live.com.ar">Contact</a></h6>
-  </footer>
-</div>
-  
-</body>
+  </footer> 
+  </div>
+  </body>
 </html>
 
