@@ -2,22 +2,40 @@
 /*desktop*/
 @media all and (min-width: 1100px) {
     .heartu1{        
-        width: 0.7em;
+        width: 2.7em;
         margin: 0.01em;
         color: rgb(253, 252, 252);
-        position: relative;
-        left: 3.4em;
-        top: -1.4em;
+        position: absolute;
+        left: 19%;
+        top: 115%;
     }
 
     .heartu2{
-        position: relative;
-        left: 2.628em;
-        width: 0.7em;
+        position: absolute;
+        left: 19%;
+        width: 2.81em;
         margin: 0.01em;
         color: $heart;
-        opacity: 0; 
-        top: -1.4em;       
+        opacity: 1; 
+        top: 115%;       
+    }
+    #heart12{
+        left: 44%;
+    }
+    #heart22{
+        left: 44%;   
+    }
+    #heart13{
+        left: 69%;
+    }
+    #heart23{
+        left: 69%; 
+    }
+    #heart14{
+        left: 94%;
+    }
+    #heart24{
+        left: 94%;
     }
     .heartu3{
         font-size: 2em;
@@ -85,48 +103,44 @@
     margin-top: 1em;
     margin-bottom: 0.5em;
     margin-right: 0em;
-    
 }
 .step{
-    width:80%;
+    max-width:80%;
     margin-left: 0.7em;
+
 }
-#insidei1{
-    margin-top: 1em;
-    margin-bottom: 0.7em;
-    position: relative;
-    left: -2.6em;
- }
- #insidei2{
-    margin-top: 1em;
-    margin-bottom: 0.7em;
-    position: relative;
-    left: -2.6em;
- }
- #insidei3{
-    margin-top: 1em;
-    margin-bottom: 0.7em;
-    position: relative;
-    left: -2.6em;
- }
+
 
  #choose{
     position: relative;
-    left: -1.3em;
+    left: 2.3em;
  }   
  #go{
     position: relative;
-    left: -3.5em;
+    left: 1.5em;
  }
  #create{
     position: relative;
-    left: -1.5em;
+    left: 1.5em;
  }
  
  .inside--number{
     position: relative;
-    left: -4.1em;
  }
+ #number1{
+    position: absolute;
+    top: 20.1em;
+}
+#number2{
+    position: absolute;
+    top: 20.1em;
+    left: 31%;
+}
+#number3{
+    position: absolute;
+    top: 20.1em;
+    left: 64.5%;
+}
 #how{
     text-align: center;
     font-size: 1.7em;
@@ -137,7 +151,7 @@
     text-align: center;
     font-size: 2.2em;
     position: relative;
-    left: -1em;
+    left: -1.4em;
 }
 .desc{
     border: 0px;   
@@ -145,7 +159,7 @@
 .icon{
     width: 4%;
     position: relative;
-    left: -1.5em;
+    left: 0.7em;
 }
 .title{
     font-size: 1.3em;
@@ -168,7 +182,7 @@
 }
 .icon--footer{
 width: 1.3%;
-margin-left: 1.9em;
+margin-left: 0.3em;
 }
 .fname{
     font-size: 2em;
@@ -200,5 +214,44 @@ margin-left: 1.9em;
 #store{
     width: 6%;
 }
+.back{
+    width: 40%;
+}
 }
 
+@media all and (min-width: 1100px) and (max-width: 1300px){
+    #stepc{
+        display: grid;
+        grid-template: 3fr / 1fr;
+}
+.step{
+    width: 40%;
+    margin-left: 30%;
+}
+#number1{
+    position: absolute;
+    left: 25%;
+}
+#number2{
+    position: absolute;
+    left: 25%;
+    top: 93%;
+}
+#number3{
+    position: absolute;
+    left: 25%;
+    top: 111%;
+}
+#choose{
+    position: relative;
+    left: 10%;
+ }   
+ #go{
+    position: relative;
+    left: 8%;
+ }
+ #create{
+    position: relative;
+    left:10%;
+ }
+}

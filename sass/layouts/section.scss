@@ -14,14 +14,16 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
         border: none;
         min-width: 180px;
         padding: 0 30px;
-        background: #c7c6c7;
+        background: #ececec;
         display: inline-block;
         border-radius: 100px;
         display: flex;
         justify-content: flex-start;
         font-size: 2.8em;
-        width: 90%;
-        margin: 0.4em;
+        width: 80%;
+        margin: 0.5em;
+        margin-left: 1.5em;
+        box-shadow: 5px 10px 5px rgb(204, 203, 203);
     }
 
     /*number margin*/
@@ -31,14 +33,25 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
         margin-bottom: 1em;
         
     }
+    #number1{
+        position: absolute;
+        top: 16.5em;
+    }
+    #number2{
+        position: absolute;
+        top: 20.1em;
+    }
+    #number3{
+        position: absolute;
+        top: 23.8em;
+    }
 
     /*number font*/
     .inside--number{
         position: absolute;
-        left: -1em;
+        left: -1.2em;
         color: #9356DC;
-        width: 1.8em;
-        
+        width: 1.8em;        
     }
 
     /*icon1*/
@@ -67,29 +80,31 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
     /*step1*/
     #choose{
         position: relative;
-        left: 0.8em;
+        left: 0.9em;
      } 
      
      /*step3*/
      #go{
         position: relative;
-        left: 0.1em;
+        left: 0.9em;
      }
 
      /*step2*/
      #create{
         position: relative;
-        left: 0.3em;
+        left: 0.9em;
      }
 
      .icon{
         width: 5%;
         position: relative;
-        left: -1.5em;
+        left: 1.5em;
     }
 
     #store{
         fill: $primary;
+        width: 7%;
+        color: #808080;
     }
 
    
