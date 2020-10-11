@@ -3,48 +3,22 @@
 @media all and (min-width: 1100px) {
     .heartu1{        
         width: 2.7em;
-        margin: 0.01em;
         color: rgb(253, 252, 252);
-        position: absolute;
-        left: 19%;
-        top: 115%;
+        position: relative;
+
     }
 
     .heartu2{
         position: absolute;
-        left: 19%;
-        width: 2.81em;
-        margin: 0.01em;
+        transform: translateX(-100%);
+        width: 2.71em;
         color: $heart;
-        opacity: 1; 
-        top: 115%;       
-    }
-    #heart12{
-        left: 44%;
-    }
-    #heart22{
-        left: 44%;   
-    }
-    #heart13{
-        left: 69%;
-    }
-    #heart23{
-        left: 69%; 
-    }
-    #heart14{
-        left: 94%;
-    }
-    #heart24{
-        left: 94%;
-    }
-    .heartu3{
-        font-size: 2em;
+        opacity: 0;                
     }
 
     .yes2{
         position: relative;
-        left: 21.9em;
-        top: -5.3em;
+        left: 1.5em;
     }
 
     .yes{
@@ -107,39 +81,36 @@
 .step{
     max-width:80%;
     margin-left: 0.7em;
-
 }
 
 
  #choose{
     position: relative;
-    left: 2.3em;
+    left: -0.5em;
  }   
  #go{
     position: relative;
-    left: 1.5em;
+    left: -0.9em;
  }
  #create{
     position: relative;
-    left: 1.5em;
+    left: -0.5em;
  }
  
  .inside--number{
     position: relative;
  }
  #number1{
-    position: absolute;
-    top: 20.1em;
+    position: relative;
+    left: -4em;
 }
 #number2{
-    position: absolute;
-    top: 20.1em;
-    left: 31%;
+    position: relative;
+    left: -4em;
 }
 #number3{
-    position: absolute;
-    top: 20.1em;
-    left: 64.5%;
+    position: relative;
+    left: -4em;
 }
 #how{
     text-align: center;
@@ -159,7 +130,7 @@
 .icon{
     width: 4%;
     position: relative;
-    left: 0.7em;
+    left: -0.7em;
 }
 .title{
     font-size: 1.3em;
@@ -228,30 +199,5 @@ margin-left: 0.3em;
     width: 40%;
     margin-left: 30%;
 }
-#number1{
-    position: absolute;
-    left: 25%;
-}
-#number2{
-    position: absolute;
-    left: 25%;
-    top: 93%;
-}
-#number3{
-    position: absolute;
-    left: 25%;
-    top: 111%;
-}
-#choose{
-    position: relative;
-    left: 10%;
- }   
- #go{
-    position: relative;
-    left: 8%;
- }
- #create{
-    position: relative;
-    left:10%;
- }
+
 }
