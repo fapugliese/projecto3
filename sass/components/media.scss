@@ -7,7 +7,7 @@
         position: relative;
 
     }
-
+    /*heart front*/
     .heartu2{
         position: absolute;
         transform: translateX(-100%);
@@ -15,179 +15,201 @@
         color: $heart;
         opacity: 0;                
     }
-
+    /*checkbox homepage*/
     .yes2{
         position: relative;
         left: 1.5em;
     }
-
+    /*checkbox menu*/
     .yes{
         left: 24em;
         top: 10em;
     }
-
+    /*restaurant nav container*/
     .rcontainer{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
+    /*restaurant container*/
     .restaurant{
         margin: 1.5em;
     }
+    /*logo*/
     #logo{
         font-size: 2.4em;
     }
-
+    /*loader logo*/
     #logo1{
         position: absolute;
         top: 40%;
         left: 20%;
     }
+    /*loader logo*/
     #logo2{
         position: absolute;
         top: 40%;
         left: 20%;
     }
-
-.img--1{
-    overflow: hidden;
-    margin-top: -30em;
-    margin-bottom: -10em;
-    width: 100%;
+    /*menu image*/
+    .img--1{
+        overflow: hidden;
+        margin-top: -30em;
+        margin-bottom: -10em;
+        width: 100%;
 }
-#head{
-    background-color: white;
-    overflow: hidden;
-    z-index: 1;
-}
-#book{
-    font-size: 1.9em; 
-}
-#paris{
-    font-size: 1.2em;
-}
-#discover{
-    font-size: 1.4em;
-}
-.button{
-    font-size: 1.1em;
-}
-
-.inside{
-    font-size: 0.5em;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    margin-right: 0em;
-}
-.step{
-    max-width:80%;
-    margin-left: 0.7em;
-}
-
-
- #choose{
-    position: relative;
-    left: -0.5em;
- }   
- #go{
-    position: relative;
-    left: -0.9em;
- }
- #create{
-    position: relative;
-    left: -0.5em;
- }
- 
- .inside--number{
-    position: relative;
- }
- #number1{
-    position: relative;
-    left: -4em;
-}
-#number2{
-    position: relative;
-    left: -4em;
-}
-#number3{
-    position: relative;
-    left: -4em;
-}
-#how{
-    text-align: center;
-    font-size: 1.7em;
-    position: relative;
-    left: -0.8em;
-}
-#resta{
-    text-align: center;
-    font-size: 2.2em;
-    position: relative;
-    left: -1.4em;
-}
-.desc{
-    border: 0px;   
-}
-.icon{
-    width: 4%;
-    position: relative;
-    left: -0.7em;
-}
-.title{
-    font-size: 1.3em;
-    margin-top: 1em;
-}
-.text--paris{
-    font-size: 1.2em;
-}
-#logof{
-    font-size: 1.2em;
-}
-.text--f{
-    font-size: 0.85em;
-}
-.fas{
-    position: relative;
-    left: 5em;
-    font-size: 1em;
-    color: brown;
-}
-.icon--footer{
-width: 1.3%;
-margin-left: 0.3em;
-}
-.fname{
-    font-size: 2em;
-}
-.fdescription{
-    font-size: 1.3em;
-}
-.price{
-    font-size: 2em;
-}
-.zero{
-    width: 50%;
-    margin-left: 25%;
-}
-.dish{
-    font-size: 1.4em;
-    text-align: center;
-}
-.title--r{
-    text-align: center;
-    position: relative;
-    left: 3.3em;
-    font-size: 1.6em;
-}
-#stepc{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-}
-#store{
-    width: 6%;
-}
-.back{
-    width: 40%;
-}
+    /*menu header*/
+    #head{
+        background-color: white;
+        overflow: hidden;
+        z-index: 1;
+    }
+    /*book the menu*/
+    #book{
+        font-size: 1.9em; 
+    }
+    /*city*/
+    #paris{
+        font-size: 1.2em;
+    }
+    /*discover top of the art*/
+    #discover{
+        font-size: 1.4em;
+    }
+    /*button*/
+    .button{
+        font-size: 1.1em;
+    }
+    /*step description*/
+    .inside{
+        font-size: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        margin-right: 0em;
+    }
+    /*step*/
+    .step{
+        max-width:80%;
+        margin-left: 0.7em;
+    }
+    /*1st step*/
+    #choose{
+        position: relative;
+        left: -0.5em;
+    }   
+    /*3rd step*/
+    #go{
+        position: relative;
+        left: -0.9em;
+    }
+    /*2nd step*/
+    #create{
+        position: relative;
+        left: -0.5em;
+    }
+    /*number 1*/
+    #number1{
+        position: relative;
+        left: -4em;
+    }
+    /*number 2*/
+    #number2{
+        position: relative;
+        left: -4em;
+    }
+    /*number 3*/
+    #number3{
+        position: relative;
+        left: -4em;
+    }
+    /*how it works*/
+    #how{
+        text-align: center;
+        font-size: 1.7em;
+        position: relative;
+        left: -0.8em;
+    }
+    /*restaurant title*/
+    #resta{
+        text-align: center;
+        font-size: 2.2em;
+        position: relative;
+        left: -0.72em;
+    }
+    /*how it works container*/
+    .desc{
+        border: 0px;   
+    }
+    /*icon */
+    .icon{
+        width: 4%;
+        position: relative;
+        left: -0.7em;
+    }
+    /*title*/
+    .title{
+        font-size: 1.3em;
+        margin-top: 1em;
+    }
+    /*paris text*/
+    .text--paris{
+        font-size: 1.2em;
+    }
+    /*footer logo*/
+    #logof{
+        font-size: 1.2em;
+    }
+    /*footer text*/
+    .text--f{
+        font-size: 0.85em;
+    }
+    
+    /*icon footer*/
+    .icon--footer{
+        width: 1.3%;
+        margin-left: 0.3em;
+    }
+    /*food name*/
+    .fname{
+        font-size: 2em;
+    }
+    /*food description*/
+    .fdescription{
+        font-size: 1.3em;
+    }
+    /*price*/
+    .price{
+        font-size: 2em;
+    }
+    /*food container*/
+    .zero{
+        width: 50%;
+        margin-left: 25%;
+    }
+    /*dish*/
+    .dish{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    /*title restaurant*/
+    .title--r{
+        text-align: center;
+        position: relative;
+        left: 3.3em;
+        font-size: 1.6em;
+    }
+    /*step container*/
+    #stepc{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    /*store icon*/
+    #store{
+        width: 6%;
+    }
+    /*back arrow*/
+    .back{
+        width: 40%;
+    }
 }
 
 @media all and (min-width: 1100px) and (max-width: 1300px){
@@ -195,9 +217,9 @@ margin-left: 0.3em;
         display: grid;
         grid-template: 3fr / 1fr;
 }
-.step{
-    width: 40%;
-    margin-left: 30%;
-}
+    .step{
+        width: 40%;
+        margin-left: 30%;
+    }
 
 }

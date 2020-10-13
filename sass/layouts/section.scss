@@ -2,8 +2,8 @@ $primary:  (#9356DC);
 $secondary: (#FF79DA);
 $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
 
-/*discover text*/
-#discover{
+    /*discover text*/
+    #discover{
     text-align: center;
     font-weight: 100;
     color: grey;
@@ -78,30 +78,28 @@ $buttoncolor: linear-gradient(to bottom, #FF79DA, #9356DC 40%);
     #choose{
         position: relative;
         left: 0.9em;
-     } 
-     
-     /*step3*/
-     #go{
+    } 
+    
+    /*step3*/
+    #go{
         position: relative;
         left: 0.9em;
-     }
+    }
 
-     /*step2*/
-     #create{
+    /*step2*/
+    #create{
         position: relative;
         left: 0.9em;
-     }
-
-     .icon{
+    }
+    /*icon*/
+    .icon{
         width: 5%;
         position: relative;
         left: 1.5em;
     }
-
+    /*store icon*/
     #store{
         fill: $primary;
         width: 7%;
         color: #808080;
     }
-
-   
