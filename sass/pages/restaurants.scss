@@ -22,7 +22,6 @@ $covercolor: darken(white, 4%);
     margin: 0%;
 }
 
-
 /*Back arrow*/
 .back{
     position: relative;
@@ -53,8 +52,6 @@ $covercolor: darken(white, 4%);
     overflow: hidden;  
     margin: 0%; 
 }
-
-
 
 /*triger*/
 .yes{
@@ -170,63 +167,62 @@ span{
     font-size: 2.8em;
 }
 
-    /*check*/
-    .checkl{
-        display: flex;
-        position: relative;
-        align-items: center;
-        background-color: #99E2D0;
-        justify-content: center;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform 0.5s linear;
-    }
+/*check*/
+.checkl{
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: #99E2D0;
+    justify-content: center;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s linear;
+}
 /*order container*/
     .order{
         text-align: center;
         margin-top: 5em;
     }
 
-    /*menu container*/
-    .cover{
-        border-top-right-radius: 50px;
-        border-top-left-radius: 50px;
-        position: relative;
-        top: -7em;
-        background-color: $covercolor;
-        width: 100%;
-        margin: 0%;
-        border: none;
-    }
+/*menu container*/
+.cover{
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    position: relative;
+    top: -7em;
+    background-color: $covercolor;
+    width: 100%;
+    margin: 0%;
+    border: none;
+}
 
-    /*title & heart container*/
-    .th{
-        display: grid;
-        grid-template: 1fr / 90% 10%;
-        border: none;
-    }
+/*title & heart container*/
+.th{
+    position: relative;
+    display: grid;
+    grid-template: 1fr / 90% 0.5% 9.5%;
+    border: none;
+    left: -2em;
+    top: 2em;
+}
+/*checkbox heart menu*/
+#yesr{
+    width: 7em;
+    position: relative;
+    top: 2em;
+}
 
-    /*heart*/
-    .heartu3{
-        display: flex;
-        position: relative;
-        align-self: flex-end;
-        font-size: 3.4em;
-        margin-top: 2em;
-        margin-right: 6em;
-    }
+/*food step*/
+.dish{
+    margin-left: 2em;
+    margin-bottom: 0.3em;
+    font-size: 2em;
+}
 
-    /*food step*/
-    .dish{
-        margin-left: 2em;
-        margin-bottom: 0.3em;
-        font-size: 2em;
-    }
-
-    /*dish container*/
-    .zero{
+/*dish container*/
+.zero{
     min-width: 180px;
     background: white;
     border-radius: 50px;
@@ -247,10 +243,8 @@ span{
     }
     }
 
-    /*check circle*/
-    .fa-check-circle{
-        font-size: 4em;
-        color: white;
-    }
-
-    
+/*check circle*/
+.fa-check-circle{
+    font-size: 4em;
+    color: white;
+}

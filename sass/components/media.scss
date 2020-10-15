@@ -15,6 +15,13 @@
         color: $heart;
         opacity: 0;                
     }
+    /*checkbox heart menu*/
+    #yesr{
+        width: 1em;
+        position: relative;
+        top: 1em;
+     }
+    
     /*checkbox homepage*/
     .yes2{
         position: relative;
@@ -56,6 +63,7 @@
         margin-top: -30em;
         margin-bottom: -10em;
         width: 100%;
+        min-height: 65em;
 }
     /*menu header*/
     #head{
@@ -63,13 +71,21 @@
         overflow: hidden;
         z-index: 1;
     }
+    /*icon place*/
+    #iconp{
+        width: 1.5em;
+      }
+  /*paris container*/
+    #parisc{
+        height: 6em;
+    }
     /*book the menu*/
     #book{
         font-size: 1.9em; 
     }
     /*city*/
     #paris{
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     /*discover top of the art*/
     #discover{
@@ -183,7 +199,9 @@
     /*food container*/
     .zero{
         width: 50%;
+        min-width: 39em;
         margin-left: 25%;
+        padding-left: 1em;
     }
     /*dish*/
     .dish{
@@ -194,7 +212,7 @@
     .title--r{
         text-align: center;
         position: relative;
-        left: 3.3em;
+        left: 4.5em;
         font-size: 1.6em;
     }
     /*step container*/
@@ -210,13 +228,25 @@
     .back{
         width: 40%;
     }
+    /*utensils icon*/
+    #utensils{
+        position: relative;
+        left: 0.5em;
+    }
+    /*hands icon*/
+    #hands{
+        position: relative;
+        left: 0.5em;
+    }
 }
 
 @media all and (min-width: 1100px) and (max-width: 1300px){
+    /*step container*/
     #stepc{
         display: grid;
         grid-template: 3fr / 1fr;
 }
+    /*step food*/
     .step{
         width: 40%;
         margin-left: 30%;
