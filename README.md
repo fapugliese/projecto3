@@ -9,6 +9,6 @@ This repo houses the assets used to build the ohmyfood website, available at htt
 CSS
 The CSS for the site is built from Sass.
 
-Author
+Developer
 Facundo E. Pugliese
 
