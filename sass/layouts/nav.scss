@@ -118,6 +118,25 @@ $covercolor: darken(white, 4%);
 /*links*/
 a, a:visited + .title{
     text-decoration: none;
+}
 
+/*new tag*/
+.new{
+    position: relative;
+    margin-left: 70%;
+    top: 2.5em;
+    width: 5em;
+    height: 1.5em;
+    background-color: #99E2D0;
+    font-size: 3em;
+    color: rgb(1, 110, 1);
+    text-align: center;
+    padding-top: 0.3em;
+    font-weight: 900;
+    border: hidden;
+}
+#withnew{
+    position: relative;
+    top: -0.9em;
 }
 
