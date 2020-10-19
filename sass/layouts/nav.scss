@@ -5,9 +5,10 @@ $covercolor: darken(white, 4%);
 .restaurant{
     border-radius: 100px;
     margin: 3em;
-    }
+    margin-bottom: 5em;
+}
 
- /*image*/   
+/*image*/   
 .img{  
     display: inline-block;
     margin-bottom: 0%;
@@ -47,10 +48,10 @@ $covercolor: darken(white, 4%);
     color: black;
 }
 
-
 /*link restaurant*/
 .an{
     display: grid;
+    padding: 0em;
 }
 
 /*title margin*/
@@ -133,10 +134,11 @@ a, a:visited + .title{
     text-align: center;
     padding-top: 0.3em;
     font-weight: 900;
-    border: hidden;
+    border: none;
+    margin-top: 0%;
+    float: none;
 }
-#withnew{
-    position: relative;
-    top: -0.9em;
+/*container with new*/
+.withnew{
+    margin-top: -5em;
 }
-

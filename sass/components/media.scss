@@ -238,12 +238,14 @@
         position: relative;
         left: 0.5em;
     }
+    /*new tag*/
     .new{
         font-size: 0.9em;
     }
-    #withnew{
+    /*container with new*/
+    .withnew{
         position: relative;
-        top: -1.9em;
+        top: -1.7em;
     }
 }
 
@@ -258,6 +260,7 @@
         width: 40%;
         margin-left: 30%;
     }
+    /*new tag*/
     .new{
         font-size: 0.7em;
         margin-left: 60%;
